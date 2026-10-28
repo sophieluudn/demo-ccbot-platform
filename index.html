@@ -121,12 +121,13 @@
       <main class="conversations-page" aria-label="即時對話列表" hidden>
         <div id="conversations-app">
           <header class="keyword-heading"><h1>即時對話列表</h1></header>
+          <form class="phrase-filters conversation-search" @submit.prevent="applySearch" aria-label="即時對話搜尋"><el-select v-model="filter" aria-label="交談篩選"><el-option label="全部交談識別" value="all"></el-option><el-option label="客服人員" value="staff"></el-option><el-option label="BOT" value="bot"></el-option></el-select><el-button type="primary" native-type="submit">搜尋</el-button></form>
           <div class="conversation-toolbar">
-            <div class="conversation-filters"><span>篩選</span><el-radio v-model="filter" label="all">全部</el-radio><el-radio v-model="filter" label="staff">客服人員</el-radio><el-button type="primary" size="mini" :disabled="selected.length === 0" @click="monitor">監控</el-button></div>
+            <div class="conversation-filters"><el-button type="primary" size="mini" :disabled="selected.length === 0" @click="monitor">監控</el-button></div>
             <div class="refresh-controls"><el-button type="success" size="mini" @click="toggleRefresh">{{ autoRefresh ? '停止自動更新' : '開啟自動更新' }}</el-button><span class="refresh-count">{{ countdown }}</span></div>
           </div>
           <div class="conversation-table">
-            <el-table ref="conversationTable" :data="filteredRows" row-key="id" border @selection-change="selected = $event" empty-text="目前沒有客服人員對話" style="width: 100%">
+            <el-table ref="conversationTable" :data="filteredRows" row-key="id" border @selection-change="selected = $event" empty-text="查無符合條件的對話" style="width: 100%">
               <el-table-column type="selection" :selectable="canMonitor" width="40" align="left"></el-table-column>
               <el-table-column prop="warning" label="警示" width="60" align="left"></el-table-column>
               <el-table-column prop="follow" label="關注" width="60" align="left"></el-table-column>
@@ -368,15 +369,16 @@
       const conversations = new Vue({
         el: '#conversations-app',
         data: {
-          filter: 'all', selected: [], autoRefresh: false, countdown: 30, timer: null, status: '',
+          filter: 'all', appliedFilter: 'all', selected: [], autoRefresh: false, countdown: 30, timer: null, status: '',
           rows: [
             { warning: 0, follow: 0, reference: 0, waiting: false, monitored: true, staff: 'David Wang', id: 'u6ae011f9c4028', member: 'G_20873645', login: 'custom', messages: 9, duration: '04 : 18', time: '10:51:57', category: '', content: '您好！我是 David Wang，很高興為您服務。請問有什麼可以協助您的嗎？' },
             { warning: 0, follow: 0, reference: 0, waiting: true, staff: '', id: 'u6ae010cb5d8bf', member: 'G_14589961', login: 'custom', messages: 5, duration: '01 : 11', time: '10:48:50', category: '', content: '目前已轉接專人客服，請稍候' },
             { warning: 0, follow: 0, reference: 0, waiting: false, staff: '', id: 'u6ae010eadd239', member: '訪客', login: 'anonymous', messages: 1, duration: '00 : 01', time: '10:48:11', category: '', content: '您好！我是 udn 售票網 小U，' }
           ]
         },
-        computed: { filteredRows() { return this.filter === 'all' ? this.rows : this.rows.filter(row => row.staff); } },
+        computed: { filteredRows() { return this.rows.filter(row => this.appliedFilter === 'all' || (this.appliedFilter === 'staff' ? !!row.staff : !row.staff)); } },
         methods: {
+          applySearch() { this.appliedFilter = this.filter; this.$refs.conversationTable.clearSelection(); },
           canMonitor(row) { return !row.monitored; },
           monitor() {
             const available = this.selected.filter(this.canMonitor);
