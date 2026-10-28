@@ -581,3 +581,13 @@ input:not(:disabled)::placeholder, textarea:not(:disabled)::placeholder { color:
 .bot-drag-upload .el-upload-dragger { height:140px; }
 .bot-drag-upload .el-upload-dragger .el-icon-upload { margin:20px 0 8px; font-size:48px; line-height:50px; }
 @media(max-width:600px) { .management-category-dialog .el-dialog__body { padding:20px 16px; } }
+
+/* Form dialogs share the same right edge for fields and footer actions. */
+:is(.keyword-dialog, .phrase-dialog, .management-category-dialog, .knowledge-dialog, .announcement-dialog, .project-dialog, .role-dialog, .user-dialog) .el-dialog__body { padding:24px 32px; }
+:is(.keyword-dialog, .phrase-dialog, .management-category-dialog, .knowledge-dialog, .announcement-dialog, .project-dialog, .role-dialog, .user-dialog) .el-dialog__footer { padding:0 32px 24px; text-align:right; }
+.phrase-dialog .el-form { max-width:none; }
+.keyword-dialog .group-description { width:100%; }
+@media(max-width:600px) {
+  :is(.keyword-dialog, .phrase-dialog, .management-category-dialog, .knowledge-dialog, .announcement-dialog, .project-dialog, .role-dialog, .user-dialog) .el-dialog__body { padding:20px 16px; }
+  :is(.keyword-dialog, .phrase-dialog, .management-category-dialog, .knowledge-dialog, .announcement-dialog, .project-dialog, .role-dialog, .user-dialog) .el-dialog__footer { padding:0 16px 20px; }
+}

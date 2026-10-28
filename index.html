@@ -115,7 +115,7 @@
             <div class="date-field"><label for="service-start">開始日期</label><el-date-picker id="service-start" v-model="start" type="datetime" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss" :disabled="disabled" :clearable="false" :editable="true" placeholder="選擇開始日期與時間" @change="changed"></el-date-picker></div>
             <div class="date-field"><label for="service-end">結束日期</label><el-date-picker id="service-end" v-model="end" type="datetime" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss" :disabled="disabled" :clearable="false" :editable="true" placeholder="選擇結束日期與時間" @change="changed"></el-date-picker></div>
           </div>
-          <div class="service-actions"><p id="service-status" role="status"></p><button class="apply-settings" type="submit" disabled>套用設定</button></div>
+          <div class="service-actions"><p id="service-status" role="status"></p><button class="apply-settings" type="submit" disabled>確定</button></div>
         </form>
       </main>
       <main class="conversations-page" aria-label="即時對話列表" hidden>
@@ -187,7 +187,7 @@
         </section>
         <p class="monitor-notice" role="status">{{ notice }}</p>
       </aside>
-      <el-dialog title="模擬用戶訊息" :visible.sync="simulatorVisible" width="500px" custom-class="keyword-dialog" :append-to-body="true"><p>模擬目前對話的用戶發話，依啟用中的關鍵字設定累加警示權值。</p><el-input v-model="simulatedText" type="textarea" :rows="3" placeholder="例如：我要找主管" aria-label="模擬用戶訊息內容"></el-input><span slot="footer"><el-button @click="simulatorVisible = false">取消</el-button><el-button type="primary" :disabled="!simulatedText.trim()" @click="simulateUserMessage">送出用戶訊息</el-button></span></el-dialog>
+      <el-dialog title="模擬用戶訊息" :visible.sync="simulatorVisible" width="500px" custom-class="keyword-dialog" :append-to-body="true"><p>模擬目前對話的用戶發話，依啟用中的關鍵字設定累加警示權值。</p><el-input v-model="simulatedText" type="textarea" :rows="3" placeholder="例如：我要找主管" aria-label="模擬用戶訊息內容"></el-input><span slot="footer"><el-button @click="simulatorVisible = false">取消</el-button><el-button type="primary" :disabled="!simulatedText.trim()" @click="simulateUserMessage">確定</el-button></span></el-dialog>
       <el-dialog title="歷史對話" :visible.sync="historyVisible" width="900px" top="50px" custom-class="history-dialog" :show-close="false" :append-to-body="true" @open="resetHistory" @opened="firstHistory">
         <div class="history-toolbar">
           <el-input v-model="historySearch" placeholder="請輸入搜尋文字" size="small" aria-label="搜尋歷史對話" clearable @input="searchHistory" @keyup.enter.native="navigateHistory(1)"></el-input>
@@ -270,13 +270,13 @@
       </el-table></div>
       <el-dialog :title="editingId === null ? '新增字詞群組' : '編輯字詞群組'" :visible.sync="dialogVisible" width="70%" top="15vh" custom-class="keyword-dialog" :append-to-body="true">
         <el-form label-width="140px" size="small" @submit.native.prevent="addWord">
+          <el-form-item label="狀態"><el-switch v-model="draft.enabled" aria-label="字詞群組狀態"></el-switch></el-form-item>
           <el-form-item label="設定群組說明：" required><el-input class="group-description" v-model="draft.description" maxlength="50" placeholder="請輸入說明文字"></el-input></el-form-item>
           <el-form-item label="提示旗標："><el-radio-group v-model="draft.flag"><el-radio v-for="flag in flags" :key="flag" :label="flag">{{ flag }}</el-radio></el-radio-group></el-form-item>
           <el-form-item label="權值設定："><el-input-number v-model="draft.weight" :min="1" :max="99" controls-position="right"></el-input-number></el-form-item>
           <el-form-item label="字詞內容：" required><div class="keyword-word-input"><el-input v-model="wordInput" placeholder="請輸入說明字詞" @keydown.enter.native.prevent="addWord"></el-input><el-button type="primary" @click="addWord">新增</el-button></div><div class="keyword-word-tags" v-if="draft.words"><el-tag v-for="word in draftWordList" :key="word" type="danger" closable @close="removeWord(word)">{{ word }}</el-tag></div></el-form-item>
-          <el-form-item label="啟用設定："><el-radio-group v-model="draft.enabled"><el-radio :label="true">啟用</el-radio><el-radio :label="false">不啟用</el-radio></el-radio-group></el-form-item>
           <p class="records-error" role="alert">{{ error }}</p>
-        </el-form><span slot="footer"><el-button @click="dialogVisible = false">取消</el-button><el-button type="primary" :disabled="!draft.description.trim() || (!draft.words.trim() && !wordInput.trim())" @click="saveGroup">儲存</el-button></span>
+        </el-form><span slot="footer"><el-button @click="dialogVisible = false">取消</el-button><el-button type="primary" :disabled="!draft.description.trim() || (!draft.words.trim() && !wordInput.trim())" @click="saveGroup">確定</el-button></span>
       </el-dialog>
     </main>
     <main class="phrases-page" id="phrases-app" aria-labelledby="phrases-title" hidden>
@@ -286,14 +286,14 @@
       <el-pagination class="phrase-pagination" :current-page.sync="page" :page-size.sync="pageSize" :page-sizes="[10,20,50]" :total="filteredPhrases.length" layout="total, sizes, prev, pager, next, jumper" @size-change="page = 1"></el-pagination>
       <el-dialog :title="editingId === null ? '新增常用語' : '編輯常用語'" :visible.sync="dialogVisible" width="70%" top="7vh" custom-class="phrase-dialog" :append-to-body="true">
         <el-form label-width="150px" @submit.native.prevent="savePhrase">
+          <el-form-item label="狀態"><el-switch v-model="draft.enabled" aria-label="常用語狀態"></el-switch></el-form-item>
           <el-form-item label="主分類設定：" required><el-select v-model="draft.main" placeholder="請選擇" @change="draft.sub = ''" aria-label="主分類設定"><el-option v-for="group in categoryOptions" :key="group.value" :label="group.label" :value="group.value"></el-option></el-select></el-form-item>
           <el-form-item label="次分類設定：" required><el-select v-model="draft.sub" placeholder="請選擇" :disabled="!draft.main" aria-label="次分類設定"><el-option v-for="sub in draftSubcategories" :key="sub.value" :label="sub.label" :value="sub.value"></el-option></el-select></el-form-item>
           <el-form-item label="常用語標題設定：" required><el-input v-model="draft.title" size="small" placeholder="請輸入說明文字" maxlength="100"></el-input></el-form-item>
           <el-form-item label="常用語權值設定："><el-input-number v-model="draft.weight" controls-position="right" :min="1" :max="999" size="small"></el-input-number><el-tooltip content="權值越高，常用語排序越前"><i class="el-icon-question phrase-help" tabindex="0"></i></el-tooltip></el-form-item>
           <el-form-item label="常用語內容：" required><div>預設回覆內容(純文字) <el-tooltip content="選取常用語後，將此內容帶入客服訊息輸入框"><i class="el-icon-question phrase-help" tabindex="0"></i></el-tooltip></div><el-input class="phrase-reply-content" v-model="draft.content" type="textarea" :rows="4" placeholder="請輸入回覆內容"></el-input><div class="phrase-media-format">多媒體格式 <el-tooltip content="可選擇多媒體類型並填入對應內容；此 Demo 僅儲存設定"><i class="el-icon-question phrase-help" tabindex="0"></i></el-tooltip><el-select v-model="draft.mediaType" placeholder="請選擇" clearable aria-label="多媒體格式"><el-option label="圖片" value="image"></el-option><el-option label="圖文卡片式" value="image-card"></el-option><el-option label="文字卡片式" value="text-card"></el-option><el-option label="影片" value="video"></el-option><el-option label="聲音" value="audio"></el-option><el-option label="快速回復" value="quick-reply"></el-option></el-select></div><el-input v-model="draft.mediaContent" type="textarea" :rows="4" placeholder="請輸入多媒體格式"></el-input></el-form-item>
-          <el-form-item label="啟用設定："><el-radio-group v-model="draft.enabled"><el-radio :label="true">啟用</el-radio><el-radio :label="false">不啟用</el-radio></el-radio-group></el-form-item>
           <p class="records-error" role="alert">{{ error }}</p>
-        </el-form><span slot="footer"><el-button @click="dialogVisible = false">取消</el-button><el-button type="primary" @click="savePhrase">儲存</el-button></span>
+        </el-form><span slot="footer"><el-button @click="dialogVisible = false">取消</el-button><el-button type="primary" @click="savePhrase">確定</el-button></span>
       </el-dialog>
     </main>
     <main class="phrase-categories-page" id="phrase-categories-app" aria-labelledby="phrase-categories-title" hidden>
@@ -310,9 +310,9 @@
         <el-form label-width="100px" @submit.native.prevent="saveCategoryForm">
           <el-form-item label="狀態"><el-switch v-model="groupDraft.enabled" aria-label="主分類狀態"></el-switch></el-form-item>
           <el-form-item label="主分類名稱" required><el-input v-model="groupDraft.label" placeholder="請輸入主分類名稱" maxlength="50"></el-input></el-form-item>
-          <el-form-item label="標籤名稱"><div class="subcategory-editor"><el-input v-model="newSubLabel" placeholder="請輸入標籤名稱" maxlength="50" @keydown.enter.native.prevent="addDraftSub"></el-input><el-button type="primary" @click="addDraftSub">新增</el-button></div><div class="management-tags"><el-tag v-for="sub in groupDraft.children" :key="sub.value" type="warning" effect="plain" closable @close="removeDraftSub(sub)">{{ sub.label }}</el-tag></div></el-form-item>
+          <el-form-item label="次分類標籤"><div class="subcategory-editor"><el-input v-model="newSubLabel" placeholder="請輸入次分類標籤" maxlength="50" @keydown.enter.native.prevent="addDraftSub"></el-input><el-button type="primary" @click="addDraftSub">新增</el-button></div><div class="management-tags"><el-tag v-for="sub in groupDraft.children" :key="sub.value" type="warning" effect="plain" closable @close="removeDraftSub(sub)">{{ sub.label }}</el-tag></div></el-form-item>
           <p class="records-error" role="alert">{{ error }}</p>
-        </el-form><span slot="footer"><el-button @click="mainVisible = false">取消</el-button><el-button type="primary" @click="saveCategoryForm">儲存</el-button></span>
+        </el-form><span slot="footer"><el-button @click="mainVisible = false">取消</el-button><el-button type="primary" @click="saveCategoryForm">確定</el-button></span>
       </el-dialog>
     </main>
     <script src="vendor/vue.min.js"></script>
