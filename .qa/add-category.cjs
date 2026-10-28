@@ -1,0 +1,4 @@
+﻿const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});try{const p=await b.newPage();await p.goto('file:///C:/Users/user/Desktop/demo-ccbot-platform/index.html#phrase-categories');await p.locator('.phrase-categories-page .keyword-heading .el-button--success').click();const d=p.locator('.el-dialog__wrapper:visible .category-management-dialog');await d.waitFor({state:'visible'});await d.locator('.el-input__inner').nth(0).fill('New main');await d.locator('.el-input__inner').nth(1).fill('New sub');await d.locator('.el-dialog__footer .el-button--primary').click();await d.waitFor({state:'hidden'});if(!(await p.locator('.category-management-table').innerText()).includes('New sub'))throw Error('Save pair');console.log('PASS: add category button, modal and main/sub pair creation');}finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
+
+

@@ -1,0 +1,2 @@
+﻿from pathlib import Path
+p=Path('index.html');s=p.read_text(encoding='utf-8-sig').replace('<button type="button">角色管理</button>','<a class="record-nav-link" href="#role-management">角色管理</a>').replace("'#project-management'].includes(location.hash)","'#project-management','#role-management'].includes(location.hash)").replace('<script src="projects.js"></script>','<script src="projects.js"></script>\n    <script src="roles.js"></script>');p.write_text(s,encoding='utf-8')

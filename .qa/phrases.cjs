@@ -1,0 +1,21 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});try{
+const p=await b.newPage({viewport:{width:1835,height:910}});const errors=[];p.on('pageerror',e=>errors.push(e.message));
+await p.goto('file:///C:/Users/user/Desktop/demo-ccbot-platform/index.html#common-phrases');
+await p.locator('.phrases-page').waitFor({state:'visible'});
+if(!(await p.locator('.phrase-table').innerText()).includes('暫無資料'))throw Error('Empty state');
+await p.screenshot({path:'.qa/phrases-page.png'});
+await p.getByRole('button',{name:'新增常用語',exact:true}).click();
+const dialog=p.getByRole('dialog',{name:'新增常用語',exact:true});await dialog.waitFor({state:'visible'});await p.waitForTimeout(350);
+await p.screenshot({path:'.qa/phrases-modal.png'});
+await dialog.getByRole('button',{name:'確定',exact:true}).click();
+if(!await dialog.locator('[role=alert]').innerText())throw Error('Validation');
+await p.evaluate(()=>{phrasesApp.draft={main:'test',sub:'test-a',title:'測試回覆',weight:10,content:'您好，請稍候。',mediaType:'',mediaContent:'',enabled:true};phrasesApp.savePhrase();});
+await dialog.waitFor({state:'hidden'});if(await p.locator('.phrase-table .el-table__row').count()!==1)throw Error('Save');
+const synced=await p.evaluate(()=>monitorApp.quickReplyOptions[0].children[0].children.some(item=>item.label==='測試回覆'&&item.value==='您好，請稍候。'));
+if(!synced)throw Error('Reply integration');
+await p.locator('.phrase-table').getByRole('button',{name:'編輯',exact:true}).click();await p.getByRole('dialog',{name:'編輯常用語',exact:true}).waitFor({state:'visible'});
+await p.getByRole('dialog',{name:'編輯常用語',exact:true}).getByRole('button',{name:'取消',exact:true}).click();
+await p.locator('#conversation-records-link').click();await p.locator('.records-page').waitFor({state:'visible'});
+if(errors.length)throw Error(errors.join('\n'));console.log('PASS: phrase page empty state, modal, validation, create/edit/cancel, enabled reply integration, route exit');
+}finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
