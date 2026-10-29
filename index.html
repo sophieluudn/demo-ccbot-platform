@@ -11,13 +11,25 @@
   </head>
   <body>
     <main class="login" aria-labelledby="platform-title">
-      <h1 id="platform-title">CCBOT 管理平台</h1>
+      <h1 id="platform-title">CCBOT 管理平台 (Demo)</h1>
       <button class="google-login" type="button">
         <svg aria-hidden="true" width="18" height="18" viewBox="0 0 48 48">
-          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5Z"/>
-          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6C44.4 38.03 46.98 31.86 46.98 24.55Z"/>
-          <path fill="#FBBC05" d="M10.53 28.59A14.4 14.4 0 0 1 9.77 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.9 23.9 0 0 0 0 24c0 3.87.93 7.53 2.56 10.78l7.97-6.19Z"/>
-          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.91-5.8l-7.73-6c-2.15 1.45-4.92 2.3-8.18 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48Z"/>
+          <path
+            fill="#EA4335"
+            d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5Z"
+          />
+          <path
+            fill="#4285F4"
+            d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6C44.4 38.03 46.98 31.86 46.98 24.55Z"
+          />
+          <path
+            fill="#FBBC05"
+            d="M10.53 28.59A14.4 14.4 0 0 1 9.77 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.9 23.9 0 0 0 0 24c0 3.87.93 7.53 2.56 10.78l7.97-6.19Z"
+          />
+          <path
+            fill="#34A853"
+            d="M24 48c6.48 0 11.93-2.13 15.91-5.8l-7.73-6c-2.15 1.45-4.92 2.3-8.18 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48Z"
+          />
         </svg>
         <span>使用 Google 帳戶登入</span>
       </button>
@@ -35,7 +47,9 @@
         <button class="project light" type="button">vision</button>
         <button class="project light" type="button">udnmobile</button>
         <button class="project light" type="button">udnfunlife</button>
-        <button class="project" id="ticket-project" type="button">售票網</button>
+        <button class="project" id="ticket-project" type="button">
+          售票網
+        </button>
         <button class="project" type="button">有設計</button>
         <button class="project" type="button">元氣網</button>
         <button class="project last-project" type="button">關渡醫院</button>
@@ -44,52 +58,135 @@
     <div class="platform" hidden>
       <aside class="sidebar" aria-label="平台選單">
         <a class="brand" href="#home">
-          <span class="bot-logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 14a9 9 0 0 1 18 0v8a5 5 0 0 1-5 5h-3" stroke="white" stroke-width="2"/><rect x="9" y="7" width="14" height="17" rx="5" fill="#fff"/><path d="M13 12v5m6-5v5m-6 3h6" stroke="#344456" stroke-width="1.8"/><path d="M6 14v7m20-7v7" stroke="#344456" stroke-width="3"/></svg></span>
+          <span class="bot-logo" aria-hidden="true"
+            ><svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M7 14a9 9 0 0 1 18 0v8a5 5 0 0 1-5 5h-3"
+                stroke="white"
+                stroke-width="2"
+              />
+              <rect x="9" y="7" width="14" height="17" rx="5" fill="#fff" />
+              <path
+                d="M13 12v5m6-5v5m-6 3h6"
+                stroke="#344456"
+                stroke-width="1.8"
+              />
+              <path d="M6 14v7m20-7v7" stroke="#344456" stroke-width="3" /></svg
+          ></span>
           <span>C.C. Bot - 售票網</span>
         </a>
         <nav class="management-nav" aria-label="管理功能">
           <details class="nav-group" open>
-            <summary><svg viewBox="0 0 24 24"><path d="M4 4h16v13H9l-5 4V4Z M8 8h8m-8 4h6"/></svg><span>對話管理</span><span class="chevron"></span></summary>
+            <summary>
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16v13H9l-5 4V4Z M8 8h8m-8 4h6" /></svg
+              ><span>對話管理</span><span class="chevron"></span>
+            </summary>
             <div class="submenu">
               <details class="monitor-group">
-                <summary>即時對話監控<span class="chevron" aria-hidden="true"></span></summary>
+                <summary>
+                  即時對話監控<span class="chevron" aria-hidden="true"></span>
+                </summary>
                 <div class="nested-menu">
-                  <a href="#disable-service" id="disable-service-link">停用真人客服設定</a>
-                  <a href="#live-conversations" id="live-conversations-link">即時對話列表</a>
-                  <a href="#conversation-monitor" id="conversation-monitor-link">交談監看列表</a>
+                  <a href="#disable-service" id="disable-service-link"
+                    >停用真人客服設定</a
+                  >
+                  <a href="#live-conversations" id="live-conversations-link"
+                    >即時對話列表</a
+                  >
+                  <a href="#conversation-monitor" id="conversation-monitor-link"
+                    >交談監看列表</a
+                  >
                 </div>
               </details>
-              <a class="record-nav-link" href="#conversation-records" id="conversation-records-link">對話紀錄查詢</a>
-              <a class="record-nav-link" href="#keyword-settings" id="keyword-settings-link">關鍵字監看設定</a>
-              <details class="monitor-group tools-group"><summary>對話維運工具<span class="chevron" aria-hidden="true"></span></summary><div class="nested-menu"><a href="#common-phrases" id="common-phrases-link">常用語管理</a><a href="#phrase-categories" id="phrase-categories-link">常用語分類管理</a><a href="#support-categories">客服問題分類管理</a></div></details>
+              <a
+                class="record-nav-link"
+                href="#conversation-records"
+                id="conversation-records-link"
+                >對話紀錄查詢</a
+              >
+              <a
+                class="record-nav-link"
+                href="#keyword-settings"
+                id="keyword-settings-link"
+                >關鍵字監看設定</a
+              >
+              <details class="monitor-group tools-group">
+                <summary>
+                  對話維運工具<span class="chevron" aria-hidden="true"></span>
+                </summary>
+                <div class="nested-menu">
+                  <a href="#common-phrases" id="common-phrases-link"
+                    >常用語管理</a
+                  ><a href="#phrase-categories" id="phrase-categories-link"
+                    >常用語分類管理</a
+                  ><a href="#support-categories">客服問題分類管理</a>
+                </div>
+              </details>
             </div>
           </details>
           <details class="nav-group" open>
-            <summary><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18m-13-15v6m8 0v6m-10 0v6"/></svg><span>智能管理</span><span class="chevron"></span></summary>
+            <summary>
+              <svg viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18M3 18h18m-13-15v6m8 0v6m-10 0v6" /></svg
+              ><span>智能管理</span><span class="chevron"></span>
+            </summary>
             <div class="submenu">
-              <details class="monitor-group knowledge-group"><summary>知識文件管理<span class="chevron"></span></summary><div class="nested-menu"><a href="#knowledge-list">知識列表</a><a href="#knowledge-categories">知識文件分類管理</a></div></details>
+              <details class="monitor-group knowledge-group">
+                <summary>知識文件管理<span class="chevron"></span></summary>
+                <div class="nested-menu">
+                  <a href="#knowledge-list">知識列表</a
+                  ><a href="#knowledge-categories">知識文件分類管理</a>
+                </div>
+              </details>
               <a class="record-nav-link" href="#announcements">公告管理</a>
             </div>
           </details>
           <details class="nav-group" open>
-            <summary><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="5"/><path d="M4 22v-3a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v3"/></svg><span>客服管理</span><span class="chevron"></span></summary>
+            <summary>
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="5" />
+                <path d="M4 22v-3a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v3" /></svg
+              ><span>客服管理</span><span class="chevron"></span>
+            </summary>
             <div class="submenu">
               <a class="record-nav-link" href="#online-status">在線狀態</a>
             </div>
           </details>
           <details class="nav-group" open>
-            <summary><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M8 12h.01M16 12h.01M8 16h8"/></svg><span>BOT 管理</span><span class="chevron"></span></summary>
-            <div class="submenu"><a class="record-nav-link" href="#bot-style-settings">BOT 樣式設定</a></div>
+            <summary>
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="7" width="16" height="13" rx="3" />
+                <path d="M12 3v4M8 12h.01M16 12h.01M8 16h8" /></svg
+              ><span>BOT 管理</span><span class="chevron"></span>
+            </summary>
+            <div class="submenu">
+              <a class="record-nav-link" href="#bot-style-settings"
+                >BOT 樣式設定</a
+              >
+            </div>
           </details>
           <details class="nav-group" open>
-            <summary><svg viewBox="0 0 24 24"><circle cx="10" cy="17" r="5"/><path d="M10 12V2h5m-5 4h4m-4 3h3"/></svg><span>權限管理</span><span class="chevron"></span></summary>
+            <summary>
+              <svg viewBox="0 0 24 24">
+                <circle cx="10" cy="17" r="5" />
+                <path d="M10 12V2h5m-5 4h4m-4 3h3" /></svg
+              ><span>權限管理</span><span class="chevron"></span>
+            </summary>
             <div class="submenu">
               <a class="record-nav-link" href="#role-management">角色管理</a>
               <a class="record-nav-link" href="#user-management">使用者管理</a>
             </div>
           </details>
           <details class="nav-group" open>
-            <summary><svg viewBox="0 0 24 24"><path d="m9 3 1-2h4l1 2 3 2 2 1-1 4v4l1 4-2 1-3 2-1 2h-4l-1-2-3-2-2-1 1-4v-4L4 6l2-1Z"/><circle cx="12" cy="12" r="4"/></svg><span>系統設定</span><span class="chevron"></span></summary>
+            <summary>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="m9 3 1-2h4l1 2 3 2 2 1-1 4v4l1 4-2 1-3 2-1 2h-4l-1-2-3-2-2-1 1-4v-4L4 6l2-1Z"
+                />
+                <circle cx="12" cy="12" r="4" /></svg
+              ><span>系統設定</span><span class="chevron"></span>
+            </summary>
             <div class="submenu">
               <a class="record-nav-link" href="#project-management">專案管理</a>
               <a class="record-nav-link" href="#menu-management">選單管理</a>
@@ -98,110 +195,574 @@
         </nav>
       </aside>
       <header class="topbar">
-        <nav class="breadcrumbs" aria-label="目前位置"><a href="#home">C.C. Bot</a><span class="service-crumbs" hidden><span>/</span> 對話管理 <span class="monitor-breadcrumb"><span>/</span> 即時對話監控</span> <span>/</span> <span aria-current="page">停用真人客服設定</span></span></nav>
+        <nav class="breadcrumbs" aria-label="目前位置">
+          <a href="#home">C.C. Bot</a
+          ><span class="service-crumbs" hidden
+            ><span>/</span> 對話管理
+            <span class="monitor-breadcrumb"><span>/</span> 即時對話監控</span>
+            <span>/</span>
+            <span aria-current="page">停用真人客服設定</span></span
+          >
+        </nav>
         <details class="account">
-          <summary aria-label="Charlie Chen 使用者選單"><span class="avatar">C<span class="online"></span></span><span class="account-arrow"></span></summary>
-          <div class="account-menu"><a href="#projects">切換專案</a><a href="#">登出</a></div>
+          <summary aria-label="Charlie Chen 使用者選單">
+            <span class="avatar">C<span class="online"></span></span
+            ><span class="account-arrow"></span>
+          </summary>
+          <div class="account-menu">
+            <a href="#projects">切換專案</a><a href="#">登出</a>
+          </div>
         </details>
       </header>
-      <main class="home" aria-labelledby="home-title"><h1 id="home-title" tabindex="-1">使用者：Charlie Chen / 系統管理者</h1></main>
+      <main class="home" aria-labelledby="home-title">
+        <h1 id="home-title" tabindex="-1">使用者：Charlie Chen / 系統管理者</h1>
+      </main>
       <main class="service-page" aria-labelledby="service-title" hidden>
         <h1 id="service-title" tabindex="-1">停用真人客服設定</h1>
         <form class="service-card">
-          <label class="switch-label" for="service-enabled">停用真人客服 <input id="service-enabled" type="checkbox" role="switch" aria-describedby="service-help"><span class="switch-track" aria-hidden="true"></span></label>
-          <p id="service-help">啟用後，系統將於設定的時間區間內停用真人客服功能</p>
-          <hr>
+          <label class="switch-label" for="service-enabled"
+            >停用真人客服
+            <input
+              id="service-enabled"
+              type="checkbox"
+              role="switch"
+              aria-describedby="service-help" /><span
+              class="switch-track"
+              aria-hidden="true"
+            ></span
+          ></label>
+          <p id="service-help">
+            啟用後，系統將於設定的時間區間內停用真人客服功能
+          </p>
+          <hr />
           <div class="date-fields" id="date-pickers">
-            <div class="date-field"><label for="service-start">開始日期</label><el-date-picker id="service-start" v-model="start" type="datetime" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss" :disabled="disabled" :clearable="false" :editable="true" placeholder="選擇開始日期與時間" @change="changed"></el-date-picker></div>
-            <div class="date-field"><label for="service-end">結束日期</label><el-date-picker id="service-end" v-model="end" type="datetime" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss" :disabled="disabled" :clearable="false" :editable="true" placeholder="選擇結束日期與時間" @change="changed"></el-date-picker></div>
+            <div class="date-field">
+              <label for="service-start">開始日期</label
+              ><el-date-picker
+                id="service-start"
+                v-model="start"
+                type="datetime"
+                format="yyyy-MM-dd HH:mm:ss"
+                value-format="yyyy-MM-dd HH:mm:ss"
+                :disabled="disabled"
+                :clearable="false"
+                :editable="true"
+                placeholder="選擇開始日期與時間"
+                @change="changed"
+              ></el-date-picker>
+            </div>
+            <div class="date-field">
+              <label for="service-end">結束日期</label
+              ><el-date-picker
+                id="service-end"
+                v-model="end"
+                type="datetime"
+                format="yyyy-MM-dd HH:mm:ss"
+                value-format="yyyy-MM-dd HH:mm:ss"
+                :disabled="disabled"
+                :clearable="false"
+                :editable="true"
+                placeholder="選擇結束日期與時間"
+                @change="changed"
+              ></el-date-picker>
+            </div>
           </div>
-          <div class="service-actions"><p id="service-status" role="status"></p><button class="apply-settings" type="submit" disabled>確定</button></div>
+          <div class="service-actions">
+            <p id="service-status" role="status"></p>
+            <button class="apply-settings" type="submit" disabled>確定</button>
+          </div>
         </form>
       </main>
       <main class="conversations-page" aria-label="即時對話列表" hidden>
         <div id="conversations-app">
           <header class="keyword-heading"><h1>即時對話列表</h1></header>
-          <form class="phrase-filters conversation-search" @submit.prevent="applySearch" aria-label="即時對話搜尋"><el-select v-model="filter" aria-label="交談篩選"><el-option label="全部交談識別" value="all"></el-option><el-option label="客服人員" value="staff"></el-option><el-option label="BOT" value="bot"></el-option></el-select><el-button type="primary" native-type="submit">搜尋</el-button></form>
+          <form
+            class="phrase-filters conversation-search"
+            @submit.prevent="applySearch"
+            aria-label="即時對話搜尋"
+          >
+            <el-select v-model="filter" aria-label="交談篩選"
+              ><el-option label="全部交談識別" value="all"></el-option
+              ><el-option label="客服人員" value="staff"></el-option
+              ><el-option label="BOT" value="bot"></el-option></el-select
+            ><el-button type="primary" native-type="submit">搜尋</el-button>
+          </form>
           <div class="conversation-toolbar">
-            <div class="conversation-filters"><el-button type="primary" size="mini" :disabled="selected.length === 0" @click="monitor">監控</el-button></div>
-            <div class="refresh-controls"><el-button type="success" size="mini" @click="toggleRefresh">{{ autoRefresh ? '停止自動更新' : '開啟自動更新' }}</el-button><span class="refresh-count">{{ countdown }}</span></div>
+            <div class="conversation-filters">
+              <el-button
+                type="primary"
+                size="mini"
+                :disabled="selected.length === 0"
+                @click="monitor"
+                >監控</el-button
+              >
+            </div>
+            <div class="refresh-controls">
+              <el-button type="success" size="mini" @click="toggleRefresh"
+                >{{ autoRefresh ? '停止自動更新' : '開啟自動更新' }}</el-button
+              ><span class="refresh-count">{{ countdown }}</span>
+            </div>
           </div>
           <div class="conversation-table">
-            <el-table ref="conversationTable" :data="filteredRows" row-key="id" border @selection-change="selected = $event" empty-text="查無符合條件的對話" style="width: 100%">
-              <el-table-column type="selection" :selectable="canMonitor" width="40" align="left"></el-table-column>
-              <el-table-column prop="warning" label="警示" width="60" align="left"></el-table-column>
-              <el-table-column prop="follow" label="關注" width="60" align="left"></el-table-column>
-              <el-table-column prop="reference" label="參考" width="60" align="left"></el-table-column>
-              <el-table-column label="交談識別" width="100" align="left"><template slot-scope="scope">{{ scope.row.staff ? '客服人員' : 'BOT' }}<div v-if="scope.row.waiting && !scope.row.staff" class="waiting-human">(待轉真人)</div></template></el-table-column>
-              <el-table-column prop="staff" label="客服人員" width="150" align="left"></el-table-column>
-              <el-table-column label="BOT 狀態" width="100" align="left"><template slot-scope="scope"><el-tag v-if="scope.row.closed" type="info" size="mini">&#24050;&#32080;&#26696;</el-tag><el-tag v-else-if="scope.row.staff" type="success" size="mini">接管中</el-tag><el-tag v-else-if="scope.row.waiting" type="info" size="mini">等待中</el-tag></template></el-table-column>
-              <el-table-column prop="id" label="對話ID" width="140" align="left"></el-table-column>
-              <el-table-column prop="member" label="會員ID" width="170" align="left"></el-table-column>
-              <el-table-column prop="login" label="登入" width="130" show-overflow-tooltip align="left"></el-table-column>
-              <el-table-column prop="messages" label="發話" width="70" align="left"></el-table-column>
-              <el-table-column prop="duration" label="已交談" width="90" align="left"></el-table-column>
-              <el-table-column label="最後交談時間" width="130" align="left"><template slot-scope="scope">2026-10-27<br>{{ scope.row.time }}</template></el-table-column>
-              <el-table-column prop="category" label="問題分類" width="110" align="left"></el-table-column>
-              <el-table-column prop="content" label="最後內容" min-width="240" show-overflow-tooltip align="left"></el-table-column>
+            <el-table
+              ref="conversationTable"
+              :data="filteredRows"
+              row-key="id"
+              border
+              @selection-change="selected = $event"
+              empty-text="查無符合條件的對話"
+              style="width: 100%"
+            >
+              <el-table-column
+                type="selection"
+                :selectable="canMonitor"
+                width="40"
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="warning"
+                label="警示"
+                width="60"
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="follow"
+                label="關注"
+                width="60"
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="reference"
+                label="參考"
+                width="60"
+                align="left"
+              ></el-table-column>
+              <el-table-column label="交談識別" width="100" align="left"
+                ><template slot-scope="scope"
+                  >{{ scope.row.staff ? '客服人員' : 'BOT' }}
+                  <div
+                    v-if="scope.row.waiting && !scope.row.staff"
+                    class="waiting-human"
+                  >
+                    (待轉真人)
+                  </div></template
+                ></el-table-column
+              >
+              <el-table-column
+                prop="staff"
+                label="客服人員"
+                width="150"
+                align="left"
+              ></el-table-column>
+              <el-table-column label="BOT 狀態" width="100" align="left"
+                ><template slot-scope="scope"
+                  ><el-tag v-if="scope.row.closed" type="info" size="mini"
+                    >&#24050;&#32080;&#26696;</el-tag
+                  ><el-tag
+                    v-else-if="scope.row.staff"
+                    type="success"
+                    size="mini"
+                    >接管中</el-tag
+                  ><el-tag v-else-if="scope.row.waiting" type="info" size="mini"
+                    >等待中</el-tag
+                  ></template
+                ></el-table-column
+              >
+              <el-table-column
+                prop="id"
+                label="對話ID"
+                width="140"
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="member"
+                label="會員ID"
+                width="170"
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="login"
+                label="登入"
+                width="130"
+                show-overflow-tooltip
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="messages"
+                label="發話"
+                width="70"
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="duration"
+                label="已交談"
+                width="90"
+                align="left"
+              ></el-table-column>
+              <el-table-column label="最後交談時間" width="130" align="left"
+                ><template slot-scope="scope"
+                  >2026-10-27<br />{{ scope.row.time }}</template
+                ></el-table-column
+              >
+              <el-table-column
+                prop="category"
+                label="問題分類"
+                width="110"
+                align="left"
+              ></el-table-column>
+              <el-table-column
+                prop="content"
+                label="最後內容"
+                min-width="240"
+                show-overflow-tooltip
+                align="left"
+              ></el-table-column>
             </el-table>
           </div>
           <p class="conversation-status" role="status">{{ status }}</p>
         </div>
       </main>
     </div>
-    <section class="monitor-page" id="monitor-app" aria-label="交談監看列表" hidden>
+    <section
+      class="monitor-page"
+      id="monitor-app"
+      aria-label="交談監看列表"
+      hidden
+    >
       <aside class="monitor-list">
-        <div class="monitor-search"><el-input v-model="search" placeholder="搜尋訊息" aria-label="搜尋訊息"></el-input></div>
+        <div class="monitor-search">
+          <el-input
+            v-model="search"
+            placeholder="搜尋訊息"
+            aria-label="搜尋訊息"
+          ></el-input>
+        </div>
         <div class="pinned-heading">置頂 ({{ pinned.length }})</div>
-        <div v-if="!visibleRows.length" class="monitor-empty">沒有符合的對話</div>
-        <div v-for="row in visibleRows" :key="row.id" class="monitor-list-row" :class="{ selected: activeId === row.id }">
-          <button class="conversation-choice" @click="activeId = row.id"><span class="person-avatar green"><i class="el-icon-user-solid"></i></span><span class="conversation-preview"><strong>{{ row.id }}</strong><span class="robot-badge" :class="{ 'human-badge': row.staff }">{{ row.staff ? '客服' : '機器人' }}</span><span class="preview-text">{{ row.content }}</span><time>上午10:49:53</time></span></button>
-          <button class="pin-conversation" :aria-label="pinned.includes(row.id) ? '取消置頂' : '置頂對話'" @click="togglePin(row.id)"><i :class="pinned.includes(row.id) ? 'el-icon-arrow-down' : 'el-icon-arrow-up'"></i></button>
-          <div v-if="row.closedLabel" class="closed-conversation-label">【客服結案】</div>
+        <div v-if="!visibleRows.length" class="monitor-empty">
+          沒有符合的對話
+        </div>
+        <div
+          v-for="row in visibleRows"
+          :key="row.id"
+          class="monitor-list-row"
+          :class="{ selected: activeId === row.id }"
+        >
+          <button class="conversation-choice" @click="activeId = row.id">
+            <span class="person-avatar green"
+              ><i class="el-icon-user-solid"></i></span
+            ><span class="conversation-preview"
+              ><strong>{{ row.id }}</strong
+              ><span class="robot-badge" :class="{ 'human-badge': row.staff }"
+                >{{ row.staff ? '客服' : '機器人' }}</span
+              ><span class="preview-text">{{ row.content }}</span
+              ><time>上午10:49:53</time></span
+            >
+          </button>
+          <button
+            class="pin-conversation"
+            :aria-label="pinned.includes(row.id) ? '取消置頂' : '置頂對話'"
+            @click="togglePin(row.id)"
+          >
+            <i
+              :class="pinned.includes(row.id) ? 'el-icon-arrow-down' : 'el-icon-arrow-up'"
+            ></i>
+          </button>
+          <div v-if="row.closedLabel" class="closed-conversation-label">
+            【客服結案】
+          </div>
         </div>
       </aside>
       <div class="monitor-chat" v-if="activeRow">
-        <header class="chat-heading"><span class="person-avatar"><i class="el-icon-user-solid"></i></span><strong>{{ activeRow.id }}</strong><button @click="historyVisible = true">查看歷史紀錄</button><button @click="simulatorVisible = true" :disabled="activeRow.closed">模擬用戶訊息</button><el-button v-if="human || activeRow.closed" class="close-case-button" type="danger" plain size="small" :disabled="activeRow.closed || activeRow.closing" @click="closeCase">{{ activeRow.closed ? '已結案' : '結案' }}</el-button></header>
+        <header class="chat-heading">
+          <span class="person-avatar"><i class="el-icon-user-solid"></i></span
+          ><strong>{{ activeRow.id }}</strong
+          ><button @click="historyVisible = true">查看歷史紀錄</button
+          ><button
+            @click="simulatorVisible = true"
+            :disabled="activeRow.closed"
+          >
+            模擬用戶訊息</button
+          ><el-button
+            v-if="human || activeRow.closed"
+            class="close-case-button"
+            type="danger"
+            plain
+            size="small"
+            :disabled="activeRow.closed || activeRow.closing"
+            @click="closeCase"
+            >{{ activeRow.closed ? '已結案' : '結案' }}</el-button
+          >
+        </header>
         <div class="chat-messages">
-          <div class="bot-message previous-message"><div class="bot-menu"><button @click="reply('回主選單')">回主選單</button></div><div class="message-meta">機器人　2026/10/27 上午10:48:50</div></div>
-          <div class="user-message"><span class="person-avatar"><i class="el-icon-user-solid"></i></span><div><span class="user-bubble">主選單</span><div class="message-meta">使用者　2026/10/27 上午10:49:52</div></div></div>
-          <div class="bot-message"><span class="person-avatar bot-avatar"><i class="el-icon-user-solid"></i></span><div class="bot-menu"><p>您好！我是 udn 售票網 小U，很高興可以為您服務，您可以點選下方選項查詢想知道的資訊，對話中想再次看到「查詢選項」，你也可以重新輸入「主選單」！</p><button v-for="item in topics" :key="item" @click="reply(item)">{{ item }}</button></div><div class="message-meta">機器人　2026/10/27 上午10:49:53</div></div>
-          <div v-for="(message, index) in messages[activeId] || []" :key="index" class="sent-message" :class="{ 'incoming-message': message.role === 'user' }"><span>{{ message.text }}</span><div class="message-meta">{{ message.role === 'user' ? '使用者' : 'Charlie Chen' }}　{{ message.time || 'Demo 訊息' }}</div></div>
+          <div class="bot-message previous-message">
+            <div class="bot-menu">
+              <button @click="reply('回主選單')">回主選單</button>
+            </div>
+            <div class="message-meta">機器人　2026/10/27 上午10:48:50</div>
+          </div>
+          <div class="user-message">
+            <span class="person-avatar"
+              ><i class="el-icon-user-solid"></i
+            ></span>
+            <div>
+              <span class="user-bubble">主選單</span>
+              <div class="message-meta">使用者　2026/10/27 上午10:49:52</div>
+            </div>
+          </div>
+          <div class="bot-message">
+            <span class="person-avatar bot-avatar"
+              ><i class="el-icon-user-solid"></i
+            ></span>
+            <div class="bot-menu">
+              <p>
+                您好！我是 udn 售票網
+                小U，很高興可以為您服務，您可以點選下方選項查詢想知道的資訊，對話中想再次看到「查詢選項」，你也可以重新輸入「主選單」！
+              </p>
+              <button v-for="item in topics" :key="item" @click="reply(item)">
+                {{ item }}
+              </button>
+            </div>
+            <div class="message-meta">機器人　2026/10/27 上午10:49:53</div>
+          </div>
+          <div
+            v-for="(message, index) in messages[activeId] || []"
+            :key="index"
+            class="sent-message"
+            :class="{ 'incoming-message': message.role === 'user' }"
+          >
+            <span>{{ message.text }}</span>
+            <div class="message-meta">
+              {{ message.role === 'user' ? '使用者' : 'Charlie Chen' }}　{{
+              message.time || 'Demo 訊息' }}
+            </div>
+          </div>
         </div>
-        <form class="chat-composer" @submit.prevent="send"><textarea v-model="draft" :disabled="!human || activeRow.closed" :placeholder="human ? '輸入回覆訊息' : '機器人自動回覆中'" aria-label="回覆訊息" @keydown="onComposerKeydown" @compositionstart="composing = true" @compositionend="composing = false"></textarea><button type="submit" :disabled="!human || activeRow.closed || !draft.trim()" aria-label="傳送訊息"><i class="el-icon-position"></i></button></form>
+        <form class="chat-composer" @submit.prevent="send">
+          <textarea
+            v-model="draft"
+            :disabled="!human || activeRow.closed"
+            :placeholder="human ? '輸入回覆訊息' : '機器人自動回覆中'"
+            aria-label="回覆訊息"
+            @keydown="onComposerKeydown"
+            @compositionstart="composing = true"
+            @compositionend="composing = false"
+          ></textarea
+          ><button
+            type="submit"
+            :disabled="!human || activeRow.closed || !draft.trim()"
+            aria-label="傳送訊息"
+          >
+            <i class="el-icon-position"></i>
+          </button>
+        </form>
       </div>
-      <div v-else class="monitor-empty">請先從即時對話列表勾選對話並點擊監控</div>
+      <div v-else class="monitor-empty">
+        請先從即時對話列表勾選對話並點擊監控
+      </div>
       <aside class="monitor-info" v-if="activeRow">
-        <div class="agent-switch"><span :class="{ 'agent-active': !human }">機器人</span><el-switch v-model="human" active-color="#67c23a" inactive-color="#409eff" aria-label="切換目前對話的客服人員"></el-switch><span :class="{ 'human-active': human }">客服人員</span></div>
-        <p>目前服務人員： <span class="current-agent">{{ human ? 'Charlie Chen' : '機器人' }}</span></p>
-        <section><h2>常用回覆</h2><el-cascader v-model="quickReply" :options="quickReplyOptions" :props="{ expandTrigger: 'hover', emitPath: false }" :show-all-levels="false" placeholder="請選擇" :disabled="!human || activeRow.closed" size="mini" popper-class="quick-reply-dropdown" @change="chooseQuickReply" aria-label="選擇常用回覆"></el-cascader></section>
-        <section><h2>交談權限</h2><p>持續交談時間： 2 分 13 秒</p><p>User ID：</p><p>{{ activeRow.member }}</p><el-button size="mini" @click="copyId">複製</el-button></section>
+        <div class="agent-switch">
+          <span :class="{ 'agent-active': !human }">機器人</span
+          ><el-switch
+            v-model="human"
+            active-color="#67c23a"
+            inactive-color="#409eff"
+            aria-label="切換目前對話的客服人員"
+          ></el-switch
+          ><span :class="{ 'human-active': human }">客服人員</span>
+        </div>
+        <p>
+          目前服務人員：
+          <span class="current-agent"
+            >{{ human ? 'Charlie Chen' : '機器人' }}</span
+          >
+        </p>
+        <section>
+          <h2>常用回覆</h2>
+          <el-cascader
+            v-model="quickReply"
+            :options="quickReplyOptions"
+            :props="{ expandTrigger: 'hover', emitPath: false }"
+            :show-all-levels="false"
+            placeholder="請選擇"
+            :disabled="!human || activeRow.closed"
+            size="mini"
+            popper-class="quick-reply-dropdown"
+            @change="chooseQuickReply"
+            aria-label="選擇常用回覆"
+          ></el-cascader>
+        </section>
+        <section>
+          <h2>交談權限</h2>
+          <p>持續交談時間： 2 分 13 秒</p>
+          <p>User ID：</p>
+          <p>{{ activeRow.member }}</p>
+          <el-button size="mini" @click="copyId">複製</el-button>
+        </section>
         <section class="category-section">
           <h2>{{ categoryVisible ? '編輯客服問題分類' : '客服問題分類' }}</h2>
           <template v-if="categoryVisible">
-            <div class="category-field"><label for="category-main">主分類:</label><el-select id="category-main" v-model="categoryMain" placeholder="請選擇" size="mini" @change="categorySub = ''"><el-option v-for="option in categoryOptions" :key="option.label" :label="option.label" :value="option.label"></el-option></el-select></div>
-            <div class="category-field"><label for="category-sub">次分類:</label><el-select id="category-sub" v-model="categorySub" placeholder="請選擇" size="mini" :disabled="!categoryMain"><el-option v-for="option in subcategoryOptions" :key="option" :label="option" :value="option"></el-option></el-select></div>
-            <div class="category-actions"><el-button size="mini" @click="cancelCategory">取消</el-button><el-button size="mini" type="primary" :disabled="!categoryMain || !categorySub" @click="saveCategory">確定</el-button></div>
+            <div class="category-field">
+              <label for="category-main">主分類:</label
+              ><el-select
+                id="category-main"
+                v-model="categoryMain"
+                placeholder="請選擇"
+                size="mini"
+                @change="categorySub = ''"
+                ><el-option
+                  v-for="option in categoryOptions"
+                  :key="option.label"
+                  :label="option.label"
+                  :value="option.label"
+                ></el-option
+              ></el-select>
+            </div>
+            <div class="category-field">
+              <label for="category-sub">次分類:</label
+              ><el-select
+                id="category-sub"
+                v-model="categorySub"
+                placeholder="請選擇"
+                size="mini"
+                :disabled="!categoryMain"
+                ><el-option
+                  v-for="option in subcategoryOptions"
+                  :key="option"
+                  :label="option"
+                  :value="option"
+                ></el-option
+              ></el-select>
+            </div>
+            <div class="category-actions">
+              <el-button size="mini" @click="cancelCategory">取消</el-button
+              ><el-button
+                size="mini"
+                type="primary"
+                :disabled="!categoryMain || !categorySub"
+                @click="saveCategory"
+                >確定</el-button
+              >
+            </div>
           </template>
-          <template v-else><div v-if="activeRow.category" class="saved-category"><el-tag type="danger" effect="plain" size="mini">{{ activeRow.category.split(" / ")[0] }}</el-tag> <el-tag type="warning" effect="plain" size="mini">{{ activeRow.category.split(" / ")[1] }}</el-tag></div><el-button size="mini" @click="editCategory">設定</el-button></template>
+          <template v-else
+            ><div v-if="activeRow.category" class="saved-category">
+              <el-tag type="danger" effect="plain" size="mini"
+                >{{ activeRow.category.split(" / ")[0] }}</el-tag
+              >
+              <el-tag type="warning" effect="plain" size="mini"
+                >{{ activeRow.category.split(" / ")[1] }}</el-tag
+              >
+            </div>
+            <el-button size="mini" @click="editCategory"
+              >設定</el-button
+            ></template
+          >
         </section>
         <p class="monitor-notice" role="status">{{ notice }}</p>
       </aside>
-      <el-dialog title="模擬用戶訊息" :visible.sync="simulatorVisible" width="500px" custom-class="keyword-dialog" :append-to-body="true"><p>模擬目前對話的用戶發話，依啟用中的關鍵字設定累加警示權值。</p><el-input v-model="simulatedText" type="textarea" :rows="3" placeholder="例如：我要找主管" aria-label="模擬用戶訊息內容"></el-input><span slot="footer"><el-button @click="simulatorVisible = false">取消</el-button><el-button type="primary" :disabled="!simulatedText.trim()" @click="simulateUserMessage">確定</el-button></span></el-dialog>
-      <el-dialog title="歷史對話" :visible.sync="historyVisible" width="900px" top="50px" custom-class="history-dialog" :show-close="false" :append-to-body="true" @open="resetHistory" @opened="firstHistory">
+      <el-dialog
+        title="模擬用戶訊息"
+        :visible.sync="simulatorVisible"
+        width="500px"
+        custom-class="keyword-dialog"
+        :append-to-body="true"
+        ><p>模擬目前對話的用戶發話，依啟用中的關鍵字設定累加警示權值。</p>
+        <el-input
+          v-model="simulatedText"
+          type="textarea"
+          :rows="3"
+          placeholder="例如：我要找主管"
+          aria-label="模擬用戶訊息內容"
+        ></el-input
+        ><span slot="footer"
+          ><el-button @click="simulatorVisible = false">取消</el-button
+          ><el-button
+            type="primary"
+            :disabled="!simulatedText.trim()"
+            @click="simulateUserMessage"
+            >確定</el-button
+          ></span
+        ></el-dialog
+      >
+      <el-dialog
+        title="歷史對話"
+        :visible.sync="historyVisible"
+        width="900px"
+        top="50px"
+        custom-class="history-dialog"
+        :show-close="false"
+        :append-to-body="true"
+        @open="resetHistory"
+        @opened="firstHistory"
+      >
         <div class="history-toolbar">
-          <el-input v-model="historySearch" placeholder="請輸入搜尋文字" size="small" aria-label="搜尋歷史對話" clearable @input="searchHistory" @keyup.enter.native="navigateHistory(1)"></el-input>
-          <span class="history-match-count" role="status">{{ historySearch ? (historyMatches.length ? (historyMatch + 1) + ' / ' + historyMatches.length : '無符合結果') : '' }}</span>
-          <el-button size="small" type="warning" icon="el-icon-arrow-down" :disabled="!historyMatches.length" aria-label="下一筆搜尋結果" @click="navigateHistory(1)"></el-button>
-          <el-button size="small" type="warning" icon="el-icon-arrow-up" :disabled="!historyMatches.length" aria-label="上一筆搜尋結果" @click="navigateHistory(-1)"></el-button>
-          <el-button size="small" type="warning" @click="firstHistory">回到第一筆</el-button>
-          <el-button size="small" type="info" @click="historyVisible = false">關閉頁面</el-button>
+          <el-input
+            v-model="historySearch"
+            placeholder="請輸入搜尋文字"
+            size="small"
+            aria-label="搜尋歷史對話"
+            clearable
+            @input="searchHistory"
+            @keyup.enter.native="navigateHistory(1)"
+          ></el-input>
+          <span class="history-match-count" role="status"
+            >{{ historySearch ? (historyMatches.length ? (historyMatch + 1) + '
+            / ' + historyMatches.length : '無符合結果') : '' }}</span
+          >
+          <el-button
+            size="small"
+            type="warning"
+            icon="el-icon-arrow-down"
+            :disabled="!historyMatches.length"
+            aria-label="下一筆搜尋結果"
+            @click="navigateHistory(1)"
+          ></el-button>
+          <el-button
+            size="small"
+            type="warning"
+            icon="el-icon-arrow-up"
+            :disabled="!historyMatches.length"
+            aria-label="上一筆搜尋結果"
+            @click="navigateHistory(-1)"
+          ></el-button>
+          <el-button size="small" type="warning" @click="firstHistory"
+            >回到第一筆</el-button
+          >
+          <el-button size="small" type="info" @click="historyVisible = false"
+            >關閉頁面</el-button
+          >
         </div>
-        <div class="history-content" ref="historyContent" :aria-label="'對話 ' + activeId + ' 的歷史紀錄'">
-          <article v-for="(message, index) in historyMessages" :key="index" class="history-message" :class="[message.bot ? 'history-bot' : 'history-user', { 'history-current': historyMatches[historyMatch] === index }]" :data-history-index="index">
-            <span class="person-avatar"><i class="el-icon-user-solid"></i></span>
+        <div
+          class="history-content"
+          ref="historyContent"
+          :aria-label="'對話 ' + activeId + ' 的歷史紀錄'"
+        >
+          <article
+            v-for="(message, index) in historyMessages"
+            :key="index"
+            class="history-message"
+            :class="[message.bot ? 'history-bot' : 'history-user', { 'history-current': historyMatches[historyMatch] === index }]"
+            :data-history-index="index"
+          >
+            <span class="person-avatar"
+              ><i class="el-icon-user-solid"></i
+            ></span>
             <div class="history-message-body">
-              <div :class="message.bot ? 'history-bot-card' : 'user-bubble'"><p class="history-message-text"><template v-for="(part, partIndex) in highlightHistory(message.text)"><mark v-if="part.match" :key="partIndex">{{ part.text }}</mark><span v-else :key="partIndex">{{ part.text }}</span></template></p><div v-if="message.menu" class="history-topic-list"><div v-for="topic in topics" :key="topic">{{ topic }}</div></div></div>
+              <div :class="message.bot ? 'history-bot-card' : 'user-bubble'">
+                <p class="history-message-text">
+                  <template
+                    v-for="(part, partIndex) in highlightHistory(message.text)"
+                    ><mark v-if="part.match" :key="partIndex"
+                      >{{ part.text }}</mark
+                    ><span v-else :key="partIndex"
+                      >{{ part.text }}</span
+                    ></template
+                  >
+                </p>
+                <div v-if="message.menu" class="history-topic-list">
+                  <div v-for="topic in topics" :key="topic">{{ topic }}</div>
+                </div>
+              </div>
               <time class="message-meta">{{ message.time }}</time>
             </div>
           </article>
@@ -209,289 +770,1235 @@
         </div>
       </el-dialog>
     </section>
-    <main class="records-page" id="records-app" aria-labelledby="records-title" hidden>
+    <main
+      class="records-page"
+      id="records-app"
+      aria-labelledby="records-title"
+      hidden
+    >
       <h1 id="records-title">對話紀錄查詢</h1>
       <form class="records-filters" @submit.prevent="searchRecords">
-        <el-date-picker v-model="range" type="datetimerange" range-separator="至" start-placeholder="開始日期" end-placeholder="結束日期" value-format="yyyy-MM-dd HH:mm:ss" format="yyyy-MM-dd HH:mm:ss" size="small" :clearable="false"></el-date-picker>
-        <el-select v-model="identity" size="small" aria-label="交談識別"><el-option label="全部交談識別" value="all"></el-option><el-option label="客服人員" value="staff"></el-option><el-option label="BOT" value="bot"></el-option></el-select>
-        <el-select v-model="field" placeholder="選擇搜尋項目" size="small" clearable aria-label="搜尋項目"><el-option v-for="item in fields" :key="item.value" :label="item.label" :value="item.value"></el-option></el-select>
-        <el-input v-model="keyword" placeholder="請輸入查詢文字" size="small" :disabled="!field" aria-label="查詢文字"></el-input>
-        <div class="message-count-filter"><span>發話次數</span><input v-model.number="minMessages" type="number" min="0" aria-label="最少發話次數"><span>～</span><input v-model.number="maxMessages" type="number" min="0" aria-label="最多發話次數"><el-tooltip content="最多次數為 0 時不限制上限"><i class="el-icon-question" tabindex="0"></i></el-tooltip></div>
-        <el-button type="primary" size="small" native-type="submit">搜尋</el-button>
+        <el-date-picker
+          v-model="range"
+          type="datetimerange"
+          range-separator="至"
+          start-placeholder="開始日期"
+          end-placeholder="結束日期"
+          value-format="yyyy-MM-dd HH:mm:ss"
+          format="yyyy-MM-dd HH:mm:ss"
+          size="small"
+          :clearable="false"
+        ></el-date-picker>
+        <el-select v-model="identity" size="small" aria-label="交談識別"
+          ><el-option label="全部交談識別" value="all"></el-option
+          ><el-option label="客服人員" value="staff"></el-option
+          ><el-option label="BOT" value="bot"></el-option
+        ></el-select>
+        <el-select
+          v-model="field"
+          placeholder="選擇搜尋項目"
+          size="small"
+          clearable
+          aria-label="搜尋項目"
+          ><el-option
+            v-for="item in fields"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value"
+          ></el-option
+        ></el-select>
+        <el-input
+          v-model="keyword"
+          placeholder="請輸入查詢文字"
+          size="small"
+          :disabled="!field"
+          aria-label="查詢文字"
+        ></el-input>
+        <div class="message-count-filter">
+          <span>發話次數</span
+          ><input
+            v-model.number="minMessages"
+            type="number"
+            min="0"
+            aria-label="最少發話次數"
+          /><span>～</span
+          ><input
+            v-model.number="maxMessages"
+            type="number"
+            min="0"
+            aria-label="最多發話次數"
+          /><el-tooltip content="最多次數為 0 時不限制上限"
+            ><i class="el-icon-question" tabindex="0"></i
+          ></el-tooltip>
+        </div>
+        <el-button type="primary" size="small" native-type="submit"
+          >搜尋</el-button
+        >
       </form>
       <p v-if="error" class="records-error" role="alert">{{ error }}</p>
       <div class="records-table">
-        <el-table :data="pagedRows" stripe @sort-change="sortRecords" empty-text="沒有符合條件的對話紀錄">
-          <el-table-column label="查看對話" width="110" align="left"><template slot-scope="scope"><el-button type="primary" size="small" @click="viewHistory(scope.row)">查看對話</el-button></template></el-table-column>
-          <el-table-column prop="warning" label="警示" sortable="custom" width="98" align="left"></el-table-column>
-          <el-table-column prop="follow" label="關注" sortable="custom" width="98" align="left"></el-table-column>
-          <el-table-column prop="reference" label="參考" sortable="custom" width="98" align="left"></el-table-column>
-          <el-table-column label="交談識別" width="98" align="left"><template slot-scope="scope">{{ scope.row.staff ? '客服人員' : 'BOT' }}</template></el-table-column>
-          <el-table-column prop="id" label="交談階段識別ID" width="160" show-overflow-tooltip align="left"></el-table-column>
-          <el-table-column prop="staff" label="客服人員" width="150" show-overflow-tooltip align="left"></el-table-column>
-          <el-table-column prop="login" label="登入方式" width="130" show-overflow-tooltip align="left"></el-table-column>
-          <el-table-column label="BOT 前端狀態" width="100" align="left"><template>其他</template></el-table-column>
-          <el-table-column prop="member" label="會員ID" width="150" show-overflow-tooltip align="left"></el-table-column>
-          <el-table-column prop="messages" label="發話次數" sortable="custom" width="98" align="left"></el-table-column>
-          <el-table-column prop="category" label="客服問題分類" width="100" align="left"></el-table-column>
-          <el-table-column label="客服處理狀態" width="100" align="left"><template slot-scope="scope"><el-tag v-if="scope.row.closed" class="record-closed-tag" type="success" effect="plain" size="small">結案</el-tag></template></el-table-column>
-          <el-table-column prop="duration" label="已交談時間" sortable="custom" width="98" align="left"><template slot-scope="scope"><i class="el-icon-time"></i>{{ scope.row.duration }}</template></el-table-column>
-          <el-table-column prop="time" label="最後交談時間" sortable="custom" width="145" align="left"><template slot-scope="scope">2026-10-27<br>{{ scope.row.time }}</template></el-table-column>
-          <el-table-column prop="content" label="最後交談內容" min-width="160" show-overflow-tooltip align="left"></el-table-column>
+        <el-table
+          :data="pagedRows"
+          stripe
+          @sort-change="sortRecords"
+          empty-text="沒有符合條件的對話紀錄"
+        >
+          <el-table-column label="查看對話" width="110" align="left"
+            ><template slot-scope="scope"
+              ><el-button
+                type="primary"
+                size="small"
+                @click="viewHistory(scope.row)"
+                >查看對話</el-button
+              ></template
+            ></el-table-column
+          >
+          <el-table-column
+            prop="warning"
+            label="警示"
+            sortable="custom"
+            width="98"
+            align="left"
+          ></el-table-column>
+          <el-table-column
+            prop="follow"
+            label="關注"
+            sortable="custom"
+            width="98"
+            align="left"
+          ></el-table-column>
+          <el-table-column
+            prop="reference"
+            label="參考"
+            sortable="custom"
+            width="98"
+            align="left"
+          ></el-table-column>
+          <el-table-column label="交談識別" width="98" align="left"
+            ><template slot-scope="scope"
+              >{{ scope.row.staff ? '客服人員' : 'BOT' }}</template
+            ></el-table-column
+          >
+          <el-table-column
+            prop="id"
+            label="交談階段識別ID"
+            width="160"
+            show-overflow-tooltip
+            align="left"
+          ></el-table-column>
+          <el-table-column
+            prop="staff"
+            label="客服人員"
+            width="150"
+            show-overflow-tooltip
+            align="left"
+          ></el-table-column>
+          <el-table-column
+            prop="login"
+            label="登入方式"
+            width="130"
+            show-overflow-tooltip
+            align="left"
+          ></el-table-column>
+          <el-table-column label="BOT 前端狀態" width="100" align="left"
+            ><template>其他</template></el-table-column
+          >
+          <el-table-column
+            prop="member"
+            label="會員ID"
+            width="150"
+            show-overflow-tooltip
+            align="left"
+          ></el-table-column>
+          <el-table-column
+            prop="messages"
+            label="發話次數"
+            sortable="custom"
+            width="98"
+            align="left"
+          ></el-table-column>
+          <el-table-column
+            prop="category"
+            label="客服問題分類"
+            width="100"
+            align="left"
+          ></el-table-column>
+          <el-table-column label="客服處理狀態" width="100" align="left"
+            ><template slot-scope="scope"
+              ><el-tag
+                v-if="scope.row.closed"
+                class="record-closed-tag"
+                type="success"
+                effect="plain"
+                size="small"
+                >結案</el-tag
+              ></template
+            ></el-table-column
+          >
+          <el-table-column
+            prop="duration"
+            label="已交談時間"
+            sortable="custom"
+            width="98"
+            align="left"
+            ><template slot-scope="scope"
+              ><i class="el-icon-time"></i>{{ scope.row.duration }}</template
+            ></el-table-column
+          >
+          <el-table-column
+            prop="time"
+            label="最後交談時間"
+            sortable="custom"
+            width="145"
+            align="left"
+            ><template slot-scope="scope"
+              >2026-10-27<br />{{ scope.row.time }}</template
+            ></el-table-column
+          >
+          <el-table-column
+            prop="content"
+            label="最後交談內容"
+            min-width="160"
+            show-overflow-tooltip
+            align="left"
+          ></el-table-column>
         </el-table>
       </div>
-      <el-pagination class="records-pagination" :current-page.sync="page" :page-size.sync="pageSize" :page-sizes="[10, 20, 50]" :total="results.length" layout="total, sizes, prev, pager, next, jumper" @size-change="page = 1"></el-pagination>
-      <el-dialog title="對話列表" :visible.sync="recordVisible" width="90%" top="50px" custom-class="record-dialog" :append-to-body="true" @open="copyNotice = ''" @opened="resetRecordScroll">
+      <el-pagination
+        class="records-pagination"
+        :current-page.sync="page"
+        :page-size.sync="pageSize"
+        :page-sizes="[10, 20, 50]"
+        :total="results.length"
+        layout="total, sizes, prev, pager, next, jumper"
+        @size-change="page = 1"
+      ></el-pagination>
+      <el-dialog
+        title="對話列表"
+        :visible.sync="recordVisible"
+        width="90%"
+        top="50px"
+        custom-class="record-dialog"
+        :append-to-body="true"
+        @open="copyNotice = ''"
+        @opened="resetRecordScroll"
+      >
         <div class="record-detail" v-if="recordRow">
           <div class="record-conversation">
-            <header class="record-conversation-heading"><span class="person-avatar record-avatar"><i class="el-icon-user-solid"></i></span><strong>{{ recordRow.id }}</strong></header>
+            <header class="record-conversation-heading">
+              <span class="person-avatar record-avatar"
+                ><i class="el-icon-user-solid"></i></span
+              ><strong>{{ recordRow.id }}</strong>
+            </header>
             <div class="record-message-scroll" ref="recordMessages">
-              <div class="user-message"><span class="person-avatar"><i class="el-icon-user-solid"></i></span><div><span class="user-bubble">主選單</span><div class="message-meta">2026/10/27 上午10:51:56</div></div></div>
-              <div class="bot-message record-bot-message"><span class="person-avatar bot-avatar"><i class="el-icon-user-solid"></i></span><div class="bot-menu"><p>您好！我是 udn 售票網 小U，很高興可以為您服務，您可以點選下方選項查詢想知道的資訊，對話中想再次看到「查詢選項」，你也可以重新輸入「主選單」！</p><div v-for="topic in topics" :key="topic" class="record-topic">{{ topic }}</div></div><div class="message-meta">機器人　2026/10/27 上午10:51:57</div></div>
-              <div v-for="(message, index) in recordMessages" :key="index" class="sent-message" :class="{ 'incoming-message': message.role === 'user' }"><span>{{ message.text }}</span><div class="message-meta">{{ message.role === 'user' ? '使用者' : 'Charlie Chen' }}　{{ message.time || 'Demo 訊息' }}</div></div>
+              <div class="user-message">
+                <span class="person-avatar"
+                  ><i class="el-icon-user-solid"></i
+                ></span>
+                <div>
+                  <span class="user-bubble">主選單</span>
+                  <div class="message-meta">2026/10/27 上午10:51:56</div>
+                </div>
+              </div>
+              <div class="bot-message record-bot-message">
+                <span class="person-avatar bot-avatar"
+                  ><i class="el-icon-user-solid"></i
+                ></span>
+                <div class="bot-menu">
+                  <p>
+                    您好！我是 udn 售票網
+                    小U，很高興可以為您服務，您可以點選下方選項查詢想知道的資訊，對話中想再次看到「查詢選項」，你也可以重新輸入「主選單」！
+                  </p>
+                  <div
+                    v-for="topic in topics"
+                    :key="topic"
+                    class="record-topic"
+                  >
+                    {{ topic }}
+                  </div>
+                </div>
+                <div class="message-meta">機器人　2026/10/27 上午10:51:57</div>
+              </div>
+              <div
+                v-for="(message, index) in recordMessages"
+                :key="index"
+                class="sent-message"
+                :class="{ 'incoming-message': message.role === 'user' }"
+              >
+                <span>{{ message.text }}</span>
+                <div class="message-meta">
+                  {{ message.role === 'user' ? '使用者' : 'Charlie Chen' }}　{{
+                  message.time || 'Demo 訊息' }}
+                </div>
+              </div>
             </div>
           </div>
           <aside class="record-detail-info">
-            <section><h2>交談權限</h2><p>持續交談時間： {{ recordRow.duration }}</p><p>User ID：</p><p>{{ recordRow.member }}</p><el-button size="mini" @click="copyRecordId">複製</el-button><p role="status">{{ copyNotice }}</p></section>
-            <section><h2>分類標籤</h2><span class="record-category">{{ recordRow.category || '未選擇分類標籤' }}</span></section>
+            <section>
+              <h2>交談權限</h2>
+              <p>持續交談時間： {{ recordRow.duration }}</p>
+              <p>User ID：</p>
+              <p>{{ recordRow.member }}</p>
+              <el-button size="mini" @click="copyRecordId">複製</el-button>
+              <p role="status">{{ copyNotice }}</p>
+            </section>
+            <section>
+              <h2>分類標籤</h2>
+              <span class="record-category"
+                >{{ recordRow.category || '未選擇分類標籤' }}</span
+              >
+            </section>
           </aside>
         </div>
       </el-dialog>
     </main>
-    <main class="keyword-page" id="keyword-app" aria-labelledby="keyword-title" hidden>
-      <header class="keyword-heading"><h1 id="keyword-title">關鍵字監看設定</h1><el-button type="success" @click="editGroup()">新增字詞群組</el-button></header>
-      <div class="keyword-table"><el-table :data="groups" stripe row-key="id" :default-sort="{ prop: 'weight', order: 'descending' }" empty-text="尚未新增字詞群組">
-        <el-table-column prop="flag" label="旗標" align="left" min-width="150"><template slot-scope="scope"><el-tag :type="flagType(scope.row.flag)">{{ scope.row.flag }}</el-tag></template></el-table-column>
-        <el-table-column prop="weight" label="權值" sortable align="left" min-width="120"></el-table-column>
-        <el-table-column prop="description" label="群組說明" align="left" min-width="230"></el-table-column>
-        <el-table-column prop="words" label="字詞內容" align="left" min-width="270"></el-table-column>
-        <el-table-column label="啟用" align="left" min-width="120"><template slot-scope="scope"><el-switch v-model="scope.row.enabled" :aria-label="scope.row.description + '啟用'"></el-switch></template></el-table-column>
-        <el-table-column label="功能" align="left" min-width="200"><template slot-scope="scope"><el-button type="primary" size="mini" @click="editGroup(scope.row)">編輯</el-button><el-button type="danger" size="mini" @click="deleteGroup(scope.row)">刪除</el-button></template></el-table-column>
-      </el-table></div>
-      <el-dialog :title="editingId === null ? '新增字詞群組' : '編輯字詞群組'" :visible.sync="dialogVisible" width="70%" top="15vh" custom-class="keyword-dialog" :append-to-body="true">
-        <el-form label-width="140px" size="small" @submit.native.prevent="addWord">
-          <el-form-item label="狀態"><el-switch v-model="draft.enabled" aria-label="字詞群組狀態"></el-switch></el-form-item>
-          <el-form-item label="設定群組說明：" required><el-input class="group-description" v-model="draft.description" maxlength="50" placeholder="請輸入說明文字"></el-input></el-form-item>
-          <el-form-item label="提示旗標："><el-radio-group v-model="draft.flag"><el-radio v-for="flag in flags" :key="flag" :label="flag">{{ flag }}</el-radio></el-radio-group></el-form-item>
-          <el-form-item label="權值設定："><el-input-number v-model="draft.weight" :min="1" :max="99" controls-position="right"></el-input-number></el-form-item>
-          <el-form-item label="字詞內容：" required><div class="keyword-word-input"><el-input v-model="wordInput" placeholder="請輸入說明字詞" @keydown.enter.native.prevent="addWord"></el-input><el-button type="primary" @click="addWord">新增</el-button></div><div class="keyword-word-tags" v-if="draft.words"><el-tag v-for="word in draftWordList" :key="word" type="danger" closable @close="removeWord(word)">{{ word }}</el-tag></div></el-form-item>
-          <p class="records-error" role="alert">{{ error }}</p>
-        </el-form><span slot="footer"><el-button @click="dialogVisible = false">取消</el-button><el-button type="primary" :disabled="!draft.description.trim() || (!draft.words.trim() && !wordInput.trim())" @click="saveGroup">確定</el-button></span>
+    <main
+      class="keyword-page"
+      id="keyword-app"
+      aria-labelledby="keyword-title"
+      hidden
+    >
+      <header class="keyword-heading">
+        <h1 id="keyword-title">關鍵字監看設定</h1>
+        <el-button type="success" @click="editGroup()">新增字詞群組</el-button>
+      </header>
+      <div class="keyword-table">
+        <el-table
+          :data="groups"
+          stripe
+          row-key="id"
+          :default-sort="{ prop: 'weight', order: 'descending' }"
+          empty-text="尚未新增字詞群組"
+        >
+          <el-table-column prop="flag" label="旗標" align="left" min-width="150"
+            ><template slot-scope="scope"
+              ><el-tag :type="flagType(scope.row.flag)"
+                >{{ scope.row.flag }}</el-tag
+              ></template
+            ></el-table-column
+          >
+          <el-table-column
+            prop="weight"
+            label="權值"
+            sortable
+            align="left"
+            min-width="120"
+          ></el-table-column>
+          <el-table-column
+            prop="description"
+            label="群組說明"
+            align="left"
+            min-width="230"
+          ></el-table-column>
+          <el-table-column
+            prop="words"
+            label="字詞內容"
+            align="left"
+            min-width="270"
+          ></el-table-column>
+          <el-table-column label="啟用" align="left" min-width="120"
+            ><template slot-scope="scope"
+              ><el-switch
+                v-model="scope.row.enabled"
+                :aria-label="scope.row.description + '啟用'"
+              ></el-switch></template
+          ></el-table-column>
+          <el-table-column label="功能" align="left" min-width="200"
+            ><template slot-scope="scope"
+              ><el-button
+                type="primary"
+                size="mini"
+                @click="editGroup(scope.row)"
+                >編輯</el-button
+              ><el-button
+                type="danger"
+                size="mini"
+                @click="deleteGroup(scope.row)"
+                >刪除</el-button
+              ></template
+            ></el-table-column
+          >
+        </el-table>
+      </div>
+      <el-dialog
+        :title="editingId === null ? '新增字詞群組' : '編輯字詞群組'"
+        :visible.sync="dialogVisible"
+        width="70%"
+        top="15vh"
+        custom-class="keyword-dialog"
+        :append-to-body="true"
+      >
+        <el-form
+          label-width="140px"
+          size="small"
+          @submit.native.prevent="addWord"
+        >
+          <el-form-item label="狀態"
+            ><el-switch
+              v-model="draft.enabled"
+              aria-label="字詞群組狀態"
+            ></el-switch
+          ></el-form-item>
+          <el-form-item label="設定群組說明：" required
+            ><el-input
+              class="group-description"
+              v-model="draft.description"
+              maxlength="50"
+              placeholder="請輸入說明文字"
+            ></el-input
+          ></el-form-item>
+          <el-form-item label="提示旗標："
+            ><el-radio-group v-model="draft.flag"
+              ><el-radio v-for="flag in flags" :key="flag" :label="flag"
+                >{{ flag }}</el-radio
+              ></el-radio-group
+            ></el-form-item
+          >
+          <el-form-item label="權值設定："
+            ><el-input-number
+              v-model="draft.weight"
+              :min="1"
+              :max="99"
+              controls-position="right"
+            ></el-input-number
+          ></el-form-item>
+          <el-form-item label="字詞內容：" required
+            ><div class="keyword-word-input">
+              <el-input
+                v-model="wordInput"
+                placeholder="請輸入說明字詞"
+                @keydown.enter.native.prevent="addWord"
+              ></el-input
+              ><el-button type="primary" @click="addWord">新增</el-button>
+            </div>
+            <div class="keyword-word-tags" v-if="draft.words">
+              <el-tag
+                v-for="word in draftWordList"
+                :key="word"
+                type="danger"
+                closable
+                @close="removeWord(word)"
+                >{{ word }}</el-tag
+              >
+            </div></el-form-item
+          >
+          <p class="records-error" role="alert">{{ error }}</p> </el-form
+        ><span slot="footer"
+          ><el-button @click="dialogVisible = false">取消</el-button
+          ><el-button
+            type="primary"
+            :disabled="!draft.description.trim() || (!draft.words.trim() && !wordInput.trim())"
+            @click="saveGroup"
+            >確定</el-button
+          ></span
+        >
       </el-dialog>
     </main>
-    <main class="phrases-page" id="phrases-app" aria-labelledby="phrases-title" hidden>
-      <header class="keyword-heading"><h1 id="phrases-title">常用語管理</h1><el-button type="success" @click="editPhrase()">新增常用語</el-button></header>
-      <form class="phrase-filters" @submit.prevent="searchPhrases"><el-select v-model="mainFilter" @change="subFilter = ''" aria-label="主分類篩選"><el-option label="全部主分類" value=""></el-option><el-option v-for="group in categoryOptions" :key="group.value" :label="group.label" :value="group.value"></el-option></el-select><el-select v-model="subFilter" aria-label="次分類篩選"><el-option label="全部次分類" value=""></el-option><el-option v-for="sub in filterSubcategories" :key="sub.value" :label="sub.label" :value="sub.value"></el-option></el-select><el-button type="primary" native-type="submit">搜尋</el-button></form>
-      <div class="phrase-table"><el-table :data="pagedPhrases" stripe empty-text="暫無資料"><el-table-column prop="id" label="編號" width="80" align="left"></el-table-column><el-table-column label="主分類" min-width="150" align="left"><template slot-scope="scope">{{ categoryLabel(scope.row.main) }}</template></el-table-column><el-table-column label="次分類" min-width="150" align="left"><template slot-scope="scope">{{ subcategoryLabel(scope.row.main, scope.row.sub) }}</template></el-table-column><el-table-column prop="title" label="常用語標題" min-width="220" align="left"></el-table-column><el-table-column prop="content" label="常用語內容" min-width="380" align="left" show-overflow-tooltip></el-table-column><el-table-column prop="weight" label="權值" sortable width="90" align="left"></el-table-column><el-table-column label="狀態" width="80" align="left"><template slot-scope="scope"><el-switch v-model="scope.row.enabled" @change="syncReplies"></el-switch></template></el-table-column><el-table-column label="功能" width="150" align="left"><template slot-scope="scope"><el-button type="primary" size="mini" @click="editPhrase(scope.row)">編輯</el-button><el-button type="danger" size="mini" @click="deletePhrase(scope.row)">刪除</el-button></template></el-table-column></el-table></div>
-      <el-pagination class="phrase-pagination" :current-page.sync="page" :page-size.sync="pageSize" :page-sizes="[10,20,50]" :total="filteredPhrases.length" layout="total, sizes, prev, pager, next, jumper" @size-change="page = 1"></el-pagination>
-      <el-dialog :title="editingId === null ? '新增常用語' : '編輯常用語'" :visible.sync="dialogVisible" width="70%" top="7vh" custom-class="phrase-dialog" :append-to-body="true">
+    <main
+      class="phrases-page"
+      id="phrases-app"
+      aria-labelledby="phrases-title"
+      hidden
+    >
+      <header class="keyword-heading">
+        <h1 id="phrases-title">常用語管理</h1>
+        <el-button type="success" @click="editPhrase()">新增常用語</el-button>
+      </header>
+      <form class="phrase-filters" @submit.prevent="searchPhrases">
+        <el-select
+          v-model="mainFilter"
+          @change="subFilter = ''"
+          aria-label="主分類篩選"
+          ><el-option label="全部主分類" value=""></el-option
+          ><el-option
+            v-for="group in categoryOptions"
+            :key="group.value"
+            :label="group.label"
+            :value="group.value"
+          ></el-option></el-select
+        ><el-select v-model="subFilter" aria-label="次分類篩選"
+          ><el-option label="全部次分類" value=""></el-option
+          ><el-option
+            v-for="sub in filterSubcategories"
+            :key="sub.value"
+            :label="sub.label"
+            :value="sub.value"
+          ></el-option></el-select
+        ><el-button type="primary" native-type="submit">搜尋</el-button>
+      </form>
+      <div class="phrase-table">
+        <el-table :data="pagedPhrases" stripe empty-text="暫無資料"
+          ><el-table-column
+            prop="id"
+            label="編號"
+            width="80"
+            align="left"
+          ></el-table-column
+          ><el-table-column label="主分類" min-width="150" align="left"
+            ><template slot-scope="scope"
+              >{{ categoryLabel(scope.row.main) }}</template
+            ></el-table-column
+          ><el-table-column label="次分類" min-width="150" align="left"
+            ><template slot-scope="scope"
+              >{{ subcategoryLabel(scope.row.main, scope.row.sub) }}</template
+            ></el-table-column
+          ><el-table-column
+            prop="title"
+            label="常用語標題"
+            min-width="220"
+            align="left"
+          ></el-table-column
+          ><el-table-column
+            prop="content"
+            label="常用語內容"
+            min-width="380"
+            align="left"
+            show-overflow-tooltip
+          ></el-table-column
+          ><el-table-column
+            prop="weight"
+            label="權值"
+            sortable
+            width="90"
+            align="left"
+          ></el-table-column
+          ><el-table-column label="狀態" width="80" align="left"
+            ><template slot-scope="scope"
+              ><el-switch
+                v-model="scope.row.enabled"
+                @change="syncReplies"
+              ></el-switch></template></el-table-column
+          ><el-table-column label="功能" width="150" align="left"
+            ><template slot-scope="scope"
+              ><el-button
+                type="primary"
+                size="mini"
+                @click="editPhrase(scope.row)"
+                >編輯</el-button
+              ><el-button
+                type="danger"
+                size="mini"
+                @click="deletePhrase(scope.row)"
+                >刪除</el-button
+              ></template
+            ></el-table-column
+          ></el-table
+        >
+      </div>
+      <el-pagination
+        class="phrase-pagination"
+        :current-page.sync="page"
+        :page-size.sync="pageSize"
+        :page-sizes="[10,20,50]"
+        :total="filteredPhrases.length"
+        layout="total, sizes, prev, pager, next, jumper"
+        @size-change="page = 1"
+      ></el-pagination>
+      <el-dialog
+        :title="editingId === null ? '新增常用語' : '編輯常用語'"
+        :visible.sync="dialogVisible"
+        width="70%"
+        top="7vh"
+        custom-class="phrase-dialog"
+        :append-to-body="true"
+      >
         <el-form label-width="150px" @submit.native.prevent="savePhrase">
-          <el-form-item label="狀態"><el-switch v-model="draft.enabled" aria-label="常用語狀態"></el-switch></el-form-item>
-          <el-form-item label="主分類設定：" required><el-select v-model="draft.main" placeholder="請選擇" @change="draft.sub = ''" aria-label="主分類設定"><el-option v-for="group in categoryOptions" :key="group.value" :label="group.label" :value="group.value"></el-option></el-select></el-form-item>
-          <el-form-item label="次分類設定：" required><el-select v-model="draft.sub" placeholder="請選擇" :disabled="!draft.main" aria-label="次分類設定"><el-option v-for="sub in draftSubcategories" :key="sub.value" :label="sub.label" :value="sub.value"></el-option></el-select></el-form-item>
-          <el-form-item label="常用語標題設定：" required><el-input v-model="draft.title" size="small" placeholder="請輸入說明文字" maxlength="100"></el-input></el-form-item>
-          <el-form-item label="常用語權值設定："><el-input-number v-model="draft.weight" controls-position="right" :min="1" :max="999" size="small"></el-input-number><el-tooltip content="權值越高，常用語排序越前"><i class="el-icon-question phrase-help" tabindex="0"></i></el-tooltip></el-form-item>
-          <el-form-item label="常用語內容：" required><div>預設回覆內容(純文字) <el-tooltip content="選取常用語後，將此內容帶入客服訊息輸入框"><i class="el-icon-question phrase-help" tabindex="0"></i></el-tooltip></div><el-input class="phrase-reply-content" v-model="draft.content" type="textarea" :rows="4" placeholder="請輸入回覆內容"></el-input><div class="phrase-media-format">多媒體格式 <el-tooltip content="可選擇多媒體類型並填入對應內容；此 Demo 僅儲存設定"><i class="el-icon-question phrase-help" tabindex="0"></i></el-tooltip><el-select v-model="draft.mediaType" placeholder="請選擇" clearable aria-label="多媒體格式"><el-option label="圖片" value="image"></el-option><el-option label="圖文卡片式" value="image-card"></el-option><el-option label="文字卡片式" value="text-card"></el-option><el-option label="影片" value="video"></el-option><el-option label="聲音" value="audio"></el-option><el-option label="快速回復" value="quick-reply"></el-option></el-select></div><el-input v-model="draft.mediaContent" type="textarea" :rows="4" placeholder="請輸入多媒體格式"></el-input></el-form-item>
-          <p class="records-error" role="alert">{{ error }}</p>
-        </el-form><span slot="footer"><el-button @click="dialogVisible = false">取消</el-button><el-button type="primary" @click="savePhrase">確定</el-button></span>
+          <el-form-item label="狀態"
+            ><el-switch
+              v-model="draft.enabled"
+              aria-label="常用語狀態"
+            ></el-switch
+          ></el-form-item>
+          <el-form-item label="主分類設定：" required
+            ><el-select
+              v-model="draft.main"
+              placeholder="請選擇"
+              @change="draft.sub = ''"
+              aria-label="主分類設定"
+              ><el-option
+                v-for="group in categoryOptions"
+                :key="group.value"
+                :label="group.label"
+                :value="group.value"
+              ></el-option></el-select
+          ></el-form-item>
+          <el-form-item label="次分類設定：" required
+            ><el-select
+              v-model="draft.sub"
+              placeholder="請選擇"
+              :disabled="!draft.main"
+              aria-label="次分類設定"
+              ><el-option
+                v-for="sub in draftSubcategories"
+                :key="sub.value"
+                :label="sub.label"
+                :value="sub.value"
+              ></el-option></el-select
+          ></el-form-item>
+          <el-form-item label="常用語標題設定：" required
+            ><el-input
+              v-model="draft.title"
+              size="small"
+              placeholder="請輸入說明文字"
+              maxlength="100"
+            ></el-input
+          ></el-form-item>
+          <el-form-item label="常用語權值設定："
+            ><el-input-number
+              v-model="draft.weight"
+              controls-position="right"
+              :min="1"
+              :max="999"
+              size="small"
+            ></el-input-number
+            ><el-tooltip content="權值越高，常用語排序越前"
+              ><i
+                class="el-icon-question phrase-help"
+                tabindex="0"
+              ></i></el-tooltip
+          ></el-form-item>
+          <el-form-item label="常用語內容：" required
+            ><div>
+              預設回覆內容(純文字)
+              <el-tooltip content="選取常用語後，將此內容帶入客服訊息輸入框"
+                ><i class="el-icon-question phrase-help" tabindex="0"></i
+              ></el-tooltip>
+            </div>
+            <el-input
+              class="phrase-reply-content"
+              v-model="draft.content"
+              type="textarea"
+              :rows="4"
+              placeholder="請輸入回覆內容"
+            ></el-input>
+            <div class="phrase-media-format">
+              多媒體格式
+              <el-tooltip
+                content="可選擇多媒體類型並填入對應內容；此 Demo 僅儲存設定"
+                ><i
+                  class="el-icon-question phrase-help"
+                  tabindex="0"
+                ></i></el-tooltip
+              ><el-select
+                v-model="draft.mediaType"
+                placeholder="請選擇"
+                clearable
+                aria-label="多媒體格式"
+                ><el-option label="圖片" value="image"></el-option
+                ><el-option label="圖文卡片式" value="image-card"></el-option
+                ><el-option label="文字卡片式" value="text-card"></el-option
+                ><el-option label="影片" value="video"></el-option
+                ><el-option label="聲音" value="audio"></el-option
+                ><el-option label="快速回復" value="quick-reply"></el-option
+              ></el-select>
+            </div>
+            <el-input
+              v-model="draft.mediaContent"
+              type="textarea"
+              :rows="4"
+              placeholder="請輸入多媒體格式"
+            ></el-input
+          ></el-form-item>
+          <p class="records-error" role="alert">{{ error }}</p> </el-form
+        ><span slot="footer"
+          ><el-button @click="dialogVisible = false">取消</el-button
+          ><el-button type="primary" @click="savePhrase">確定</el-button></span
+        >
       </el-dialog>
     </main>
-    <main class="phrase-categories-page" id="phrase-categories-app" aria-labelledby="phrase-categories-title" hidden>
-      <header class="keyword-heading"><h1 id="phrase-categories-title">常用語分類管理</h1><el-button type="success" @click="editMain()">新增分類</el-button></header>
-      <form class="category-search" @submit.prevent="appliedSearch = searchText.trim()"><el-input v-model="searchText" placeholder="請輸入主分類或次分類" aria-label="搜尋主分類或次分類" clearable></el-input><el-button type="primary" native-type="submit">搜尋</el-button></form>
-      <div class="category-management-table"><el-table :data="filteredCategories" :tree-props="{ children: '__tableChildren' }" stripe empty-text="暫無資料" row-key="value">
-        <el-table-column prop="id" label="編號" width="80" align="left"></el-table-column>
-        <el-table-column label="主分類名稱" width="200" align="left"><template slot-scope="scope"><el-button type="text" @click="editMain(scope.row)">{{ scope.row.label }}</el-button></template></el-table-column>
-        <el-table-column label="次分類標籤" min-width="520" align="left"><template slot-scope="scope"><div class="category-labels"><el-tag v-for="sub in scope.row.children" :key="sub.value" type="warning" effect="plain" size="small" :class="{ 'subcategory-disabled': !sub.enabled, 'category-search-match': matchesSearch(sub.label) }" tabindex="0" role="button" :aria-label="'編輯次分類 ' + sub.label" @click="editMain(scope.row)" @keydown.enter.native="editMain(scope.row)">{{ sub.label }}</el-tag><span v-if="!scope.row.children.length" class="category-no-subs">尚無次分類</span></div></template></el-table-column>
-        <el-table-column label="啟用" width="85" align="left"><template slot-scope="scope"><el-switch v-model="scope.row.enabled" :aria-label="scope.row.label + '啟用狀態'" @change="sync"></el-switch></template></el-table-column>
-        <el-table-column label="刪除" width="100" align="left"><template slot-scope="scope"><el-button type="danger" size="small" @click="removeMain(scope.row)">刪除</el-button></template></el-table-column>
-      </el-table></div>
-      <el-dialog :title="editingValue ? '編輯分類' : '新增分類'" :visible.sync="mainVisible" width="70%" custom-class="category-management-dialog management-category-dialog" :append-to-body="true">
+    <main
+      class="phrase-categories-page"
+      id="phrase-categories-app"
+      aria-labelledby="phrase-categories-title"
+      hidden
+    >
+      <header class="keyword-heading">
+        <h1 id="phrase-categories-title">常用語分類管理</h1>
+        <el-button type="success" @click="editMain()">新增分類</el-button>
+      </header>
+      <form
+        class="category-search"
+        @submit.prevent="appliedSearch = searchText.trim()"
+      >
+        <el-input
+          v-model="searchText"
+          placeholder="請輸入主分類或次分類"
+          aria-label="搜尋主分類或次分類"
+          clearable
+        ></el-input
+        ><el-button type="primary" native-type="submit">搜尋</el-button>
+      </form>
+      <div class="category-management-table">
+        <el-table
+          :data="filteredCategories"
+          :tree-props="{ children: '__tableChildren' }"
+          stripe
+          empty-text="暫無資料"
+          row-key="value"
+        >
+          <el-table-column
+            prop="id"
+            label="編號"
+            width="80"
+            align="left"
+          ></el-table-column>
+          <el-table-column label="主分類名稱" width="200" align="left"
+            ><template slot-scope="scope"
+              ><el-button type="text" @click="editMain(scope.row)"
+                >{{ scope.row.label }}</el-button
+              ></template
+            ></el-table-column
+          >
+          <el-table-column label="次分類標籤" min-width="520" align="left"
+            ><template slot-scope="scope"
+              ><div class="category-labels">
+                <el-tag
+                  v-for="sub in scope.row.children"
+                  :key="sub.value"
+                  type="warning"
+                  effect="plain"
+                  size="small"
+                  :class="{ 'subcategory-disabled': !sub.enabled, 'category-search-match': matchesSearch(sub.label) }"
+                  tabindex="0"
+                  role="button"
+                  :aria-label="'編輯次分類 ' + sub.label"
+                  @click="editMain(scope.row)"
+                  @keydown.enter.native="editMain(scope.row)"
+                  >{{ sub.label }}</el-tag
+                ><span
+                  v-if="!scope.row.children.length"
+                  class="category-no-subs"
+                  >尚無次分類</span
+                >
+              </div></template
+            ></el-table-column
+          >
+          <el-table-column label="啟用" width="85" align="left"
+            ><template slot-scope="scope"
+              ><el-switch
+                v-model="scope.row.enabled"
+                :aria-label="scope.row.label + '啟用狀態'"
+                @change="sync"
+              ></el-switch></template
+          ></el-table-column>
+          <el-table-column label="刪除" width="100" align="left"
+            ><template slot-scope="scope"
+              ><el-button
+                type="danger"
+                size="small"
+                @click="removeMain(scope.row)"
+                >刪除</el-button
+              ></template
+            ></el-table-column
+          >
+        </el-table>
+      </div>
+      <el-dialog
+        :title="editingValue ? '編輯分類' : '新增分類'"
+        :visible.sync="mainVisible"
+        width="70%"
+        custom-class="category-management-dialog management-category-dialog"
+        :append-to-body="true"
+      >
         <el-form label-width="100px" @submit.native.prevent="saveCategoryForm">
-          <el-form-item label="狀態"><el-switch v-model="groupDraft.enabled" aria-label="主分類狀態"></el-switch></el-form-item>
-          <el-form-item label="主分類名稱" required><el-input v-model="groupDraft.label" placeholder="請輸入主分類名稱" maxlength="50"></el-input></el-form-item>
-          <el-form-item label="次分類標籤"><div class="subcategory-editor"><el-input v-model="newSubLabel" placeholder="請輸入次分類標籤" maxlength="50" @keydown.enter.native.prevent="addDraftSub"></el-input><el-button type="primary" @click="addDraftSub">新增</el-button></div><div class="management-tags"><el-tag v-for="sub in groupDraft.children" :key="sub.value" type="warning" effect="plain" closable @close="removeDraftSub(sub)">{{ sub.label }}</el-tag></div></el-form-item>
-          <p class="records-error" role="alert">{{ error }}</p>
-        </el-form><span slot="footer"><el-button @click="mainVisible = false">取消</el-button><el-button type="primary" @click="saveCategoryForm">確定</el-button></span>
+          <el-form-item label="狀態"
+            ><el-switch
+              v-model="groupDraft.enabled"
+              aria-label="主分類狀態"
+            ></el-switch
+          ></el-form-item>
+          <el-form-item label="主分類名稱" required
+            ><el-input
+              v-model="groupDraft.label"
+              placeholder="請輸入主分類名稱"
+              maxlength="50"
+            ></el-input
+          ></el-form-item>
+          <el-form-item label="次分類標籤"
+            ><div class="subcategory-editor">
+              <el-input
+                v-model="newSubLabel"
+                placeholder="請輸入次分類標籤"
+                maxlength="50"
+                @keydown.enter.native.prevent="addDraftSub"
+              ></el-input
+              ><el-button type="primary" @click="addDraftSub">新增</el-button>
+            </div>
+            <div class="management-tags">
+              <el-tag
+                v-for="sub in groupDraft.children"
+                :key="sub.value"
+                type="warning"
+                effect="plain"
+                closable
+                @close="removeDraftSub(sub)"
+                >{{ sub.label }}</el-tag
+              >
+            </div></el-form-item
+          >
+          <p class="records-error" role="alert">{{ error }}</p> </el-form
+        ><span slot="footer"
+          ><el-button @click="mainVisible = false">取消</el-button
+          ><el-button type="primary" @click="saveCategoryForm"
+            >確定</el-button
+          ></span
+        >
       </el-dialog>
     </main>
     <script src="vendor/vue.min.js"></script>
     <script src="vendor/element-ui/index.js"></script>
     <script>
-      document.querySelector('.google-login').addEventListener('click', () => {
-        window.location.hash = 'projects';
+      document.querySelector(".google-login").addEventListener("click", () => {
+        window.location.hash = "projects";
       });
-      document.querySelector('#ticket-project').addEventListener('click', () => {
-        window.location.hash = 'home';
-      });
-      const serviceToggle = document.querySelector('#service-enabled');
-      const applySettings = document.querySelector('.apply-settings');
+      document
+        .querySelector("#ticket-project")
+        .addEventListener("click", () => {
+          window.location.hash = "home";
+        });
+      const serviceToggle = document.querySelector("#service-enabled");
+      const applySettings = document.querySelector(".apply-settings");
       const datePickers = new Vue({
-        el: '#date-pickers',
-        data: { start: '2021-07-21 12:00:00', end: '2026-08-01 14:00:00', disabled: true },
+        el: "#date-pickers",
+        data: {
+          start: "2021-07-21 12:00:00",
+          end: "2026-08-01 14:00:00",
+          disabled: true,
+        },
         methods: {
           changed() {
             applySettings.disabled = false;
-            document.querySelector('#service-status').textContent = '';
-          }
-        }
+            document.querySelector("#service-status").textContent = "";
+          },
+        },
       });
-      serviceToggle.addEventListener('change', () => {
+      serviceToggle.addEventListener("change", () => {
         datePickers.disabled = !serviceToggle.checked;
         applySettings.disabled = false;
-        document.querySelector('#service-status').textContent = '';
+        document.querySelector("#service-status").textContent = "";
       });
-      document.querySelector('.service-card').addEventListener('input', () => {
+      document.querySelector(".service-card").addEventListener("input", () => {
         applySettings.disabled = false;
-        document.querySelector('#service-status').textContent = '';
+        document.querySelector("#service-status").textContent = "";
       });
-      document.querySelector('.service-card').addEventListener('submit', (event) => {
-        event.preventDefault();
-        if (serviceToggle.checked && (!datePickers.start || !datePickers.end || datePickers.start >= datePickers.end)) {
-          document.querySelector('#service-status').textContent = '請設定有效日期，結束日期必須晚於開始日期';
-          document.querySelector('#service-end').focus();
-          return;
-        }
-        document.querySelector('#service-status').textContent = 'Demo 設定已套用';
-        applySettings.disabled = true;
-      });
+      document
+        .querySelector(".service-card")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          if (
+            serviceToggle.checked &&
+            (!datePickers.start ||
+              !datePickers.end ||
+              datePickers.start >= datePickers.end)
+          ) {
+            document.querySelector("#service-status").textContent =
+              "請設定有效日期，結束日期必須晚於開始日期";
+            document.querySelector("#service-end").focus();
+            return;
+          }
+          document.querySelector("#service-status").textContent =
+            "Demo 設定已套用";
+          applySettings.disabled = true;
+        });
       function scoreKeywords(text, groups) {
-        const normalized = text.normalize('NFKC').toLowerCase();
+        const normalized = text.normalize("NFKC").toLowerCase();
         const items = [];
-        groups.forEach(group => {
+        groups.forEach((group) => {
           const weight = Number(group.weight);
           if (!group.enabled || !Number.isFinite(weight) || weight <= 0) return;
-          const words = new Set(group.words.split(/[,，、\n]+/).map(word => word.trim().normalize('NFKC').toLowerCase()).filter(Boolean));
-          words.forEach(word => { if (normalized.includes(word)) items.push({ groupId: group.id, word, weight }); });
+          const words = new Set(
+            group.words
+              .split(/[,，、\n]+/)
+              .map((word) => word.trim().normalize("NFKC").toLowerCase())
+              .filter(Boolean),
+          );
+          words.forEach((word) => {
+            if (normalized.includes(word))
+              items.push({ groupId: group.id, word, weight });
+          });
         });
-        return { total: items.reduce((sum, item) => sum + item.weight, 0), items };
+        return {
+          total: items.reduce((sum, item) => sum + item.weight, 0),
+          items,
+        };
       }
       const conversations = new Vue({
-        el: '#conversations-app',
+        el: "#conversations-app",
         data: {
-          filter: 'all', appliedFilter: 'all', selected: [], autoRefresh: false, countdown: 30, timer: null, status: '',
+          filter: "all",
+          appliedFilter: "all",
+          selected: [],
+          autoRefresh: false,
+          countdown: 30,
+          timer: null,
+          status: "",
           rows: [
-            { warning: 0, follow: 0, reference: 0, waiting: false, monitored: true, staff: 'David Wang', id: 'u6ae011f9c4028', member: 'G_20873645', login: 'custom', messages: 9, duration: '04 : 18', time: '10:51:57', category: '', content: '您好！我是 David Wang，很高興為您服務。請問有什麼可以協助您的嗎？' },
-            { warning: 0, follow: 0, reference: 0, waiting: true, staff: '', id: 'u6ae010cb5d8bf', member: 'G_14589961', login: 'custom', messages: 5, duration: '01 : 11', time: '10:48:50', category: '', content: '目前已轉接專人客服，請稍候' },
-            { warning: 0, follow: 0, reference: 0, waiting: false, staff: '', id: 'u6ae010eadd239', member: '訪客', login: 'anonymous', messages: 1, duration: '00 : 01', time: '10:48:11', category: '', content: '您好！我是 udn 售票網 小U，' }
-          ]
+            {
+              warning: 0,
+              follow: 0,
+              reference: 0,
+              waiting: false,
+              monitored: true,
+              staff: "David Wang",
+              id: "u6ae011f9c4028",
+              member: "G_20873645",
+              login: "custom",
+              messages: 9,
+              duration: "04 : 18",
+              time: "10:51:57",
+              category: "",
+              content:
+                "您好！我是 David Wang，很高興為您服務。請問有什麼可以協助您的嗎？",
+            },
+            {
+              warning: 0,
+              follow: 0,
+              reference: 0,
+              waiting: true,
+              staff: "",
+              id: "u6ae010cb5d8bf",
+              member: "G_14589961",
+              login: "custom",
+              messages: 5,
+              duration: "01 : 11",
+              time: "10:48:50",
+              category: "",
+              content: "目前已轉接專人客服，請稍候",
+            },
+            {
+              warning: 0,
+              follow: 0,
+              reference: 0,
+              waiting: false,
+              staff: "",
+              id: "u6ae010eadd239",
+              member: "訪客",
+              login: "anonymous",
+              messages: 1,
+              duration: "00 : 01",
+              time: "10:48:11",
+              category: "",
+              content: "您好！我是 udn 售票網 小U，",
+            },
+          ],
         },
-        computed: { filteredRows() { return this.rows.filter(row => this.appliedFilter === 'all' || (this.appliedFilter === 'staff' ? !!row.staff : !row.staff)); } },
+        computed: {
+          filteredRows() {
+            return this.rows.filter(
+              (row) =>
+                this.appliedFilter === "all" ||
+                (this.appliedFilter === "staff" ? !!row.staff : !row.staff),
+            );
+          },
+        },
         methods: {
-          applySearch() { this.appliedFilter = this.filter; this.$refs.conversationTable.clearSelection(); },
-          canMonitor(row) { return !row.monitored; },
+          applySearch() {
+            this.appliedFilter = this.filter;
+            this.$refs.conversationTable.clearSelection();
+          },
+          canMonitor(row) {
+            return !row.monitored;
+          },
           monitor() {
             const available = this.selected.filter(this.canMonitor);
             if (!available.length) return;
-            available.forEach(row => {
-              this.$set(row, 'monitored', true);
-              if (!monitorApp.rows.some(item => item.id === row.id)) monitorApp.rows.push(row);
+            available.forEach((row) => {
+              this.$set(row, "monitored", true);
+              if (!monitorApp.rows.some((item) => item.id === row.id))
+                monitorApp.rows.push(row);
             });
             monitorApp.activeId = available[0].id;
             this.selected = [];
-            this.$nextTick(() => { if (this.$refs.conversationTable) this.$refs.conversationTable.clearSelection(); });
-            window.location.hash = 'conversation-monitor';
+            this.$nextTick(() => {
+              if (this.$refs.conversationTable)
+                this.$refs.conversationTable.clearSelection();
+            });
+            window.location.hash = "conversation-monitor";
           },
-          stopRefresh() { clearInterval(this.timer); this.timer = null; this.autoRefresh = false; this.countdown = 30; },
+          stopRefresh() {
+            clearInterval(this.timer);
+            this.timer = null;
+            this.autoRefresh = false;
+            this.countdown = 30;
+          },
           toggleRefresh() {
-            if (this.autoRefresh) { this.stopRefresh(); return; }
+            if (this.autoRefresh) {
+              this.stopRefresh();
+              return;
+            }
             this.autoRefresh = true;
             this.timer = setInterval(() => {
-              if (--this.countdown === 0) { this.countdown = 30; this.status = 'Demo 對話列表已更新（示範資料）'; }
+              if (--this.countdown === 0) {
+                this.countdown = 30;
+                this.status = "Demo 對話列表已更新（示範資料）";
+              }
             }, 1000);
-          }
-        }
+          },
+        },
       });
       const monitorApp = new Vue({
-        el: '#monitor-app',
+        el: "#monitor-app",
         data: {
-          rows: [], activeId: '', search: '', pinned: [], draft: '', quickReply: '', messages: {}, categories: {}, categoryMain: '', categorySub: '', categoryVisible: false, historyVisible: false, notice: '',
+          rows: [],
+          activeId: "",
+          search: "",
+          pinned: [],
+          draft: "",
+          quickReply: "",
+          messages: {},
+          categories: {},
+          categoryMain: "",
+          categorySub: "",
+          categoryVisible: false,
+          historyVisible: false,
+          notice: "",
           categoryOptions: [
-            { label: '購票相關', children: ['購票流程', '付款問題'] },
-            { label: '取票相關', children: ['取票方式', '取票異常'] },
-            { label: '登入註冊類', children: ['會員註冊', '帳號登入'] },
-            { label: '退票相關', children: ['退票申請', '退款進度'] },
-            { label: '訂單查詢', children: ['訂單狀態', '訂單異常'] },
-            { label: '帳款發票', children: ['付款查詢', '發票問題'] },
-            { label: '節目相關', children: ['節目資訊', '節目異動'] },
-            { label: '其他問題', children: ['一般諮詢', '其他'] }
+            { label: "購票相關", children: ["購票流程", "付款問題"] },
+            { label: "取票相關", children: ["取票方式", "取票異常"] },
+            { label: "登入註冊類", children: ["會員註冊", "帳號登入"] },
+            { label: "退票相關", children: ["退票申請", "退款進度"] },
+            { label: "訂單查詢", children: ["訂單狀態", "訂單異常"] },
+            { label: "帳款發票", children: ["付款查詢", "發票問題"] },
+            { label: "節目相關", children: ["節目資訊", "節目異動"] },
+            { label: "其他問題", children: ["一般諮詢", "其他"] },
           ],
-          topics: ['購票相關', '取票相關', '登入註冊類', '退票相關', '訂單查詢', '帳款發票', '節目相關', '其他問題'],
-          historySearch: '', historyMatch: -1, composing: false, simulatorVisible: false, simulatedText: '',
+          topics: [
+            "購票相關",
+            "取票相關",
+            "登入註冊類",
+            "退票相關",
+            "訂單查詢",
+            "帳款發票",
+            "節目相關",
+            "其他問題",
+          ],
+          historySearch: "",
+          historyMatch: -1,
+          composing: false,
+          simulatorVisible: false,
+          simulatedText: "",
           quickReplyOptions: [
-            { value: 'test', label: '主分類(測試)', children: [
-              { value: 'test-a', label: '次分類A(測試)', children: [
-                { value: '常用語A-1(測試)', label: '常用語A-1(測試)' },
-                { value: '常用語A-2(測試)', label: '常用語A-2(測試)' }
-              ] },
-              { value: 'test-b', label: '次分類B(測試)', children: [
-                { value: '常用語B-1(測試)', label: '常用語B-1(測試)' },
-                { value: '常用語B-2(測試)', label: '常用語B-2(測試)' }
-              ] }
-            ] },
-            { value: 'greeting', label: '招呼語', children: [
-              { value: '您好，請問有什麼可以協助您的嗎？', label: '您好，請問有什麼可以協助您的嗎？' },
-              { value: '請稍候，正在為您查詢。', label: '請稍候，正在為您查詢。' },
-              { value: '感謝您的耐心等候。', label: '感謝您的耐心等候。' }
-            ] }
-          ]
+            {
+              value: "test",
+              label: "主分類(測試)",
+              children: [
+                {
+                  value: "test-a",
+                  label: "次分類A(測試)",
+                  children: [
+                    { value: "常用語A-1(測試)", label: "常用語A-1(測試)" },
+                    { value: "常用語A-2(測試)", label: "常用語A-2(測試)" },
+                  ],
+                },
+                {
+                  value: "test-b",
+                  label: "次分類B(測試)",
+                  children: [
+                    { value: "常用語B-1(測試)", label: "常用語B-1(測試)" },
+                    { value: "常用語B-2(測試)", label: "常用語B-2(測試)" },
+                  ],
+                },
+              ],
+            },
+            {
+              value: "greeting",
+              label: "招呼語",
+              children: [
+                {
+                  value: "您好，請問有什麼可以協助您的嗎？",
+                  label: "您好，請問有什麼可以協助您的嗎？",
+                },
+                {
+                  value: "請稍候，正在為您查詢。",
+                  label: "請稍候，正在為您查詢。",
+                },
+                { value: "感謝您的耐心等候。", label: "感謝您的耐心等候。" },
+              ],
+            },
+          ],
         },
         computed: {
           historyMessages() {
             if (!this.activeRow) return [];
             return [
-              { text: '開始吧', bot: false, time: '2026/5/5 下午2:31:52' },
-              { text: '您好！我是 udn 售票網 小U，很高興可以為您服務，您可以點選下方選項查詢想知道的資訊，對話中想再次看到「查詢選項」，你也可以重新輸入「主選單」！', bot: true, menu: true, time: '2026/5/5 下午2:31:53' },
-              { text: '退票相關', bot: false, time: '2026/5/5 下午2:31:55' },
-              { text: '退票方式與申請期限請參考各節目頁面的退票說明。如需協助，請提供訂單資訊。', bot: true, time: '2026/5/5 下午2:31:56' },
-              ...(this.messages[this.activeId] || []).map(message => ({ text: message.text, bot: message.role !== 'user', time: message.time || '2026/10/27 Demo 訊息' }))
+              { text: "開始吧", bot: false, time: "2026/5/5 下午2:31:52" },
+              {
+                text: "您好！我是 udn 售票網 小U，很高興可以為您服務，您可以點選下方選項查詢想知道的資訊，對話中想再次看到「查詢選項」，你也可以重新輸入「主選單」！",
+                bot: true,
+                menu: true,
+                time: "2026/5/5 下午2:31:53",
+              },
+              { text: "退票相關", bot: false, time: "2026/5/5 下午2:31:55" },
+              {
+                text: "退票方式與申請期限請參考各節目頁面的退票說明。如需協助，請提供訂單資訊。",
+                bot: true,
+                time: "2026/5/5 下午2:31:56",
+              },
+              ...(this.messages[this.activeId] || []).map((message) => ({
+                text: message.text,
+                bot: message.role !== "user",
+                time: message.time || "2026/10/27 Demo 訊息",
+              })),
             ];
           },
-          historyMatches() { const term = this.historySearch.trim().toLowerCase(); return term ? this.historyMessages.reduce((matches, message, index) => { if (message.text.toLowerCase().includes(term)) matches.push(index); return matches; }, []) : []; },
-          activeRow() { return this.rows.find(row => row.id === this.activeId); },
-          subcategoryOptions() { const main = this.categoryOptions.find(option => option.label === this.categoryMain); return main ? main.children : []; },
+          historyMatches() {
+            const term = this.historySearch.trim().toLowerCase();
+            return term
+              ? this.historyMessages.reduce((matches, message, index) => {
+                  if (message.text.toLowerCase().includes(term))
+                    matches.push(index);
+                  return matches;
+                }, [])
+              : [];
+          },
+          activeRow() {
+            return this.rows.find((row) => row.id === this.activeId);
+          },
+          subcategoryOptions() {
+            const main = this.categoryOptions.find(
+              (option) => option.label === this.categoryMain,
+            );
+            return main ? main.children : [];
+          },
           human: {
-            get() { return Boolean(this.activeRow && this.activeRow.staff); },
+            get() {
+              return Boolean(this.activeRow && this.activeRow.staff);
+            },
             set(enabled) {
               if (!this.activeRow || this.activeRow.closed) return;
-              this.activeRow.staff = enabled ? 'Charlie Chen' : '';
-              this.draft = '';
-              this.quickReply = '';
-            }
+              this.activeRow.staff = enabled ? "Charlie Chen" : "";
+              this.draft = "";
+              this.quickReply = "";
+            },
           },
-          visibleRows() { return this.rows.filter(row => (row.id + row.content + row.member).toLowerCase().includes(this.search.toLowerCase())).slice().sort((a, b) => Number(this.pinned.includes(b.id)) - Number(this.pinned.includes(a.id))); }
+          visibleRows() {
+            return this.rows
+              .filter((row) =>
+                (row.id + row.content + row.member)
+                  .toLowerCase()
+                  .includes(this.search.toLowerCase()),
+              )
+              .slice()
+              .sort(
+                (a, b) =>
+                  Number(this.pinned.includes(b.id)) -
+                  Number(this.pinned.includes(a.id)),
+              );
+          },
         },
-        watch: { activeId() { this.draft = ''; this.quickReply = ''; this.notice = ''; this.cancelCategory(); } },
+        watch: {
+          activeId() {
+            this.draft = "";
+            this.quickReply = "";
+            this.notice = "";
+            this.cancelCategory();
+          },
+        },
         methods: {
-          resetHistory() { this.historySearch = ''; this.historyMatch = -1; },
+          resetHistory() {
+            this.historySearch = "";
+            this.historyMatch = -1;
+          },
           async closeCase() {
             const row = this.activeRow;
             if (!row || !row.staff || row.closed || row.closing) return;
-            this.$set(row, 'closing', true);
+            this.$set(row, "closing", true);
             try {
-              await this.$confirm('客服問題（交談階段識別 ID：' + row.id + '）處理完畢', '確定結案?', { type: 'warning', confirmButtonText: '確定', cancelButtonText: '取消', closeOnClickModal: false });
-              this.$set(row, 'closed', true);
-              if (this.activeId === row.id) { this.draft = ''; this.quickReply = ''; }
-              this.$message({ message: '案件: ' + row.id + ' 已經結束', type: 'info', duration: 5000, onClose: () => { this.$set(row, 'closedLabel', true); } });
+              await this.$confirm(
+                "客服問題（交談階段識別 ID：" + row.id + "）處理完畢",
+                "確定結案?",
+                {
+                  type: "warning",
+                  confirmButtonText: "確定",
+                  cancelButtonText: "取消",
+                  closeOnClickModal: false,
+                },
+              );
+              this.$set(row, "closed", true);
+              if (this.activeId === row.id) {
+                this.draft = "";
+                this.quickReply = "";
+              }
+              this.$message({
+                message: "案件: " + row.id + " 已經結束",
+                type: "info",
+                duration: 5000,
+                onClose: () => {
+                  this.$set(row, "closedLabel", true);
+                },
+              });
             } catch {
               // Canceling leaves this conversation open.
-            } finally { row.closing = false; }
+            } finally {
+              row.closing = false;
+            }
           },
-          firstHistory() { const content = this.$refs.historyContent; if (content) content.scrollTop = 0; },
-          searchHistory() { this.historyMatch = this.historyMatches.length ? 0 : -1; this.scrollHistoryMatch(); },
-          navigateHistory(direction) { const count = this.historyMatches.length; if (!count) return; this.historyMatch = (this.historyMatch + direction + count) % count; this.scrollHistoryMatch(); },
-          scrollHistoryMatch() { this.$nextTick(() => { const content = this.$refs.historyContent; if (!content) return; const item = content.querySelector('[data-history-index="' + this.historyMatches[this.historyMatch] + '"]'); if (item) content.scrollTop = item.offsetTop - content.offsetTop - 16; }); },
+          firstHistory() {
+            const content = this.$refs.historyContent;
+            if (content) content.scrollTop = 0;
+          },
+          searchHistory() {
+            this.historyMatch = this.historyMatches.length ? 0 : -1;
+            this.scrollHistoryMatch();
+          },
+          navigateHistory(direction) {
+            const count = this.historyMatches.length;
+            if (!count) return;
+            this.historyMatch = (this.historyMatch + direction + count) % count;
+            this.scrollHistoryMatch();
+          },
+          scrollHistoryMatch() {
+            this.$nextTick(() => {
+              const content = this.$refs.historyContent;
+              if (!content) return;
+              const item = content.querySelector(
+                '[data-history-index="' +
+                  this.historyMatches[this.historyMatch] +
+                  '"]',
+              );
+              if (item)
+                content.scrollTop = item.offsetTop - content.offsetTop - 16;
+            });
+          },
           highlightHistory(text) {
             const term = this.historySearch.trim();
             if (!term) return [{ text, match: false }];
-            const parts = []; let position = 0; let index;
-            while ((index = text.toLowerCase().indexOf(term.toLowerCase(), position)) !== -1) { if (index > position) parts.push({ text: text.slice(position, index), match: false }); parts.push({ text: text.slice(index, index + term.length), match: true }); position = index + term.length; }
-            if (position < text.length) parts.push({ text: text.slice(position), match: false });
+            const parts = [];
+            let position = 0;
+            let index;
+            while (
+              (index = text
+                .toLowerCase()
+                .indexOf(term.toLowerCase(), position)) !== -1
+            ) {
+              if (index > position)
+                parts.push({ text: text.slice(position, index), match: false });
+              parts.push({
+                text: text.slice(index, index + term.length),
+                match: true,
+              });
+              position = index + term.length;
+            }
+            if (position < text.length)
+              parts.push({ text: text.slice(position), match: false });
             return parts;
           },
-          chooseQuickReply(text) { if (this.human && this.activeRow && !this.activeRow.closed && text) this.draft = text; },
-          togglePin(id) { this.pinned = this.pinned.includes(id) ? this.pinned.filter(item => item !== id) : [...this.pinned, id]; },
-          reply(text) { if (!this.activeRow || this.activeRow.closed) return; this.$set(this.messages, this.activeId, [...(this.messages[this.activeId] || []), { text, role: 'staff' }]); },
+          chooseQuickReply(text) {
+            if (this.human && this.activeRow && !this.activeRow.closed && text)
+              this.draft = text;
+          },
+          togglePin(id) {
+            this.pinned = this.pinned.includes(id)
+              ? this.pinned.filter((item) => item !== id)
+              : [...this.pinned, id];
+          },
+          reply(text) {
+            if (!this.activeRow || this.activeRow.closed) return;
+            this.$set(this.messages, this.activeId, [
+              ...(this.messages[this.activeId] || []),
+              { text, role: "staff" },
+            ]);
+          },
           simulateUserMessage() {
             const text = this.simulatedText.trim();
             if (!text || !this.activeRow || this.activeRow.closed) return;
@@ -500,251 +2007,947 @@
             row.warning += matches.total;
             row.messages += 1;
             row.content = text;
-            row.time = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(new Date());
-            this.$set(this.messages, this.activeId, [...(this.messages[this.activeId] || []), { text, role: 'user', time: row.time, keywordMatches: matches.items }]);
-            this.notice = matches.total ? '本次警示 +' + matches.total + '，累計 ' + row.warning : '未命中啟用中的關鍵字';
-            this.simulatedText = ''; this.simulatorVisible = false;
+            row.time = new Intl.DateTimeFormat("en-GB", {
+              timeZone: "Asia/Taipei",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+              hour12: false,
+            }).format(new Date());
+            this.$set(this.messages, this.activeId, [
+              ...(this.messages[this.activeId] || []),
+              {
+                text,
+                role: "user",
+                time: row.time,
+                keywordMatches: matches.items,
+              },
+            ]);
+            this.notice = matches.total
+              ? "本次警示 +" + matches.total + "，累計 " + row.warning
+              : "未命中啟用中的關鍵字";
+            this.simulatedText = "";
+            this.simulatorVisible = false;
           },
           onComposerKeydown(event) {
-            if (event.key !== 'Enter' || event.shiftKey || event.isComposing || this.composing || event.keyCode === 229) return;
+            if (
+              event.key !== "Enter" ||
+              event.shiftKey ||
+              event.isComposing ||
+              this.composing ||
+              event.keyCode === 229
+            )
+              return;
             event.preventDefault();
             if (!event.repeat) this.send();
           },
-          send() { if (!this.human || !this.activeRow || this.activeRow.closed || !this.draft.trim()) return; this.reply(this.draft.trim()); this.draft = ''; },
-          async copyId() { try { await navigator.clipboard.writeText(this.activeRow.member); this.notice = '已複製 User ID'; } catch { this.notice = '請手動複製：' + this.activeRow.member; } },
+          send() {
+            if (
+              !this.human ||
+              !this.activeRow ||
+              this.activeRow.closed ||
+              !this.draft.trim()
+            )
+              return;
+            this.reply(this.draft.trim());
+            this.draft = "";
+          },
+          async copyId() {
+            try {
+              await navigator.clipboard.writeText(this.activeRow.member);
+              this.notice = "已複製 User ID";
+            } catch {
+              this.notice = "請手動複製：" + this.activeRow.member;
+            }
+          },
           editCategory() {
             const saved = this.categories[this.activeId];
-            this.categoryMain = saved ? saved.main : '';
-            this.categorySub = saved ? saved.sub : '';
+            this.categoryMain = saved ? saved.main : "";
+            this.categorySub = saved ? saved.sub : "";
             this.categoryVisible = true;
-            this.notice = '';
+            this.notice = "";
           },
-          cancelCategory() { this.categoryVisible = false; this.categoryMain = ''; this.categorySub = ''; },
-          saveCategory() {
-            if (!this.activeRow || !this.categoryMain || !this.subcategoryOptions.includes(this.categorySub)) return;
-            this.$set(this.categories, this.activeId, { main: this.categoryMain, sub: this.categorySub });
-            this.activeRow.category = this.categoryMain + ' / ' + this.categorySub;
+          cancelCategory() {
             this.categoryVisible = false;
-            this.notice = 'Demo 分類已設定';
-          }
-        }
+            this.categoryMain = "";
+            this.categorySub = "";
+          },
+          saveCategory() {
+            if (
+              !this.activeRow ||
+              !this.categoryMain ||
+              !this.subcategoryOptions.includes(this.categorySub)
+            )
+              return;
+            this.$set(this.categories, this.activeId, {
+              main: this.categoryMain,
+              sub: this.categorySub,
+            });
+            this.activeRow.category =
+              this.categoryMain + " / " + this.categorySub;
+            this.categoryVisible = false;
+            this.notice = "Demo 分類已設定";
+          },
+        },
       });
       const recordsApp = new Vue({
-        el: '#records-app',
-        data: { recordVisible: false, recordRow: null, copyNotice: '', topics: monitorApp.topics, range: ['2026-10-24 00:00:00', '2026-10-27 23:59:59'], identity: 'all', field: '', keyword: '', minMessages: 1, maxMessages: 0, page: 1, pageSize: 10, error: '', criteria: null, sort: {}, rows: conversations.rows, fields: [{ value: 'id', label: '對話ID' }, { value: 'member', label: '會員ID' }, { value: 'staff', label: '客服人員' }, { value: 'content', label: '對話內容' }] },
+        el: "#records-app",
+        data: {
+          recordVisible: false,
+          recordRow: null,
+          copyNotice: "",
+          topics: monitorApp.topics,
+          range: ["2026-10-24 00:00:00", "2026-10-27 23:59:59"],
+          identity: "all",
+          field: "",
+          keyword: "",
+          minMessages: 1,
+          maxMessages: 0,
+          page: 1,
+          pageSize: 10,
+          error: "",
+          criteria: null,
+          sort: {},
+          rows: conversations.rows,
+          fields: [
+            { value: "id", label: "對話ID" },
+            { value: "member", label: "會員ID" },
+            { value: "staff", label: "客服人員" },
+            { value: "content", label: "對話內容" },
+          ],
+        },
         computed: {
           results() {
             const criteria = this.criteria;
-            let rows = this.rows.filter(row => {
+            let rows = this.rows.filter((row) => {
               if (!criteria) return true;
-              const time = '2026-10-27 ' + row.time;
-              return (!criteria.range || (time >= criteria.range[0] && time <= criteria.range[1])) && (criteria.identity === 'all' || (criteria.identity === 'staff' ? !!row.staff : !row.staff)) && (!criteria.field || String(row[criteria.field] || '').toLowerCase().includes(criteria.keyword.toLowerCase())) && row.messages >= criteria.min && (!criteria.max || row.messages <= criteria.max);
+              const time = "2026-10-27 " + row.time;
+              return (
+                (!criteria.range ||
+                  (time >= criteria.range[0] && time <= criteria.range[1])) &&
+                (criteria.identity === "all" ||
+                  (criteria.identity === "staff" ? !!row.staff : !row.staff)) &&
+                (!criteria.field ||
+                  String(row[criteria.field] || "")
+                    .toLowerCase()
+                    .includes(criteria.keyword.toLowerCase())) &&
+                row.messages >= criteria.min &&
+                (!criteria.max || row.messages <= criteria.max)
+              );
             });
-            if (this.sort.prop && this.sort.order) rows = rows.slice().sort((a,b) => { const left = a[this.sort.prop], right = b[this.sort.prop]; const comparison = typeof left === 'number' ? left - right : String(left).localeCompare(String(right)); return this.sort.order === 'ascending' ? comparison : -comparison; });
+            if (this.sort.prop && this.sort.order)
+              rows = rows.slice().sort((a, b) => {
+                const left = a[this.sort.prop],
+                  right = b[this.sort.prop];
+                const comparison =
+                  typeof left === "number"
+                    ? left - right
+                    : String(left).localeCompare(String(right));
+                return this.sort.order === "ascending"
+                  ? comparison
+                  : -comparison;
+              });
             return rows;
           },
-          recordMessages() { return this.recordRow ? (monitorApp.messages[this.recordRow.id] || []) : []; },
-          pagedRows() { return this.results.slice((this.page - 1) * this.pageSize, this.page * this.pageSize); }
+          recordMessages() {
+            return this.recordRow
+              ? monitorApp.messages[this.recordRow.id] || []
+              : [];
+          },
+          pagedRows() {
+            return this.results.slice(
+              (this.page - 1) * this.pageSize,
+              this.page * this.pageSize,
+            );
+          },
         },
         methods: {
           searchRecords() {
-            if (!this.range || this.range[0] > this.range[1] || this.minMessages < 0 || this.maxMessages < 0 || (this.maxMessages && this.maxMessages < this.minMessages)) { this.error = '請確認日期區間及發話次數範圍'; return; }
-            this.error = ''; this.page = 1;
-            this.criteria = { range: this.range.slice(), identity: this.identity, field: this.field, keyword: this.keyword.trim(), min: Number(this.minMessages) || 0, max: Number(this.maxMessages) || 0 };
+            if (
+              !this.range ||
+              this.range[0] > this.range[1] ||
+              this.minMessages < 0 ||
+              this.maxMessages < 0 ||
+              (this.maxMessages && this.maxMessages < this.minMessages)
+            ) {
+              this.error = "請確認日期區間及發話次數範圍";
+              return;
+            }
+            this.error = "";
+            this.page = 1;
+            this.criteria = {
+              range: this.range.slice(),
+              identity: this.identity,
+              field: this.field,
+              keyword: this.keyword.trim(),
+              min: Number(this.minMessages) || 0,
+              max: Number(this.maxMessages) || 0,
+            };
           },
-          sortRecords(sort) { this.sort = sort; this.page = 1; },
-          viewHistory(row) { this.recordRow = row; this.recordVisible = true; },
-          resetRecordScroll() { if (this.$refs.recordMessages) this.$refs.recordMessages.scrollTop = 0; },
-          async copyRecordId() { try { await navigator.clipboard.writeText(this.recordRow.member); this.copyNotice = 'Copied'; } catch { this.copyNotice = this.recordRow.member; } }
-        }
+          sortRecords(sort) {
+            this.sort = sort;
+            this.page = 1;
+          },
+          viewHistory(row) {
+            this.recordRow = row;
+            this.recordVisible = true;
+          },
+          resetRecordScroll() {
+            if (this.$refs.recordMessages)
+              this.$refs.recordMessages.scrollTop = 0;
+          },
+          async copyRecordId() {
+            try {
+              await navigator.clipboard.writeText(this.recordRow.member);
+              this.copyNotice = "Copied";
+            } catch {
+              this.copyNotice = this.recordRow.member;
+            }
+          },
+        },
       });
       const keywordApp = new Vue({
-        el: '#keyword-app',
-        data: { wordInput: '', dialogVisible: false, editingId: null, error: '', flags: ['警示', '積極關注', '參考指標'], draft: { flag: '警示', weight: 3, description: '', words: '', enabled: true }, groups: [
-          { id: 1, flag: '警示', weight: 3, description: '投訴', words: '找主管,提告,消保官,告消基會,投訴', enabled: true },
-          { id: 2, flag: '警示', weight: 3, description: '負面攻擊', words: '爛,服務差,很不好,幹,他媽的', enabled: true },
-          { id: 3, flag: '積極關注', weight: 2, description: '正面評價', words: '好棒,節目精彩,操作便利,買票方便', enabled: true },
-          { id: 4, flag: '參考指標', weight: 1, description: '近期節目相關', words: '聯票,套票,梵谷,郭富城', enabled: true }
-        ] },
-        computed: { draftWordList() { return this.draft.words.split(',').filter(Boolean); } },
+        el: "#keyword-app",
+        data: {
+          wordInput: "",
+          dialogVisible: false,
+          editingId: null,
+          error: "",
+          flags: ["警示", "積極關注", "參考指標"],
+          draft: {
+            flag: "警示",
+            weight: 3,
+            description: "",
+            words: "",
+            enabled: true,
+          },
+          groups: [
+            {
+              id: 1,
+              flag: "警示",
+              weight: 3,
+              description: "投訴",
+              words: "找主管,提告,消保官,告消基會,投訴",
+              enabled: true,
+            },
+            {
+              id: 2,
+              flag: "警示",
+              weight: 3,
+              description: "負面攻擊",
+              words: "爛,服務差,很不好,幹,他媽的",
+              enabled: true,
+            },
+            {
+              id: 3,
+              flag: "積極關注",
+              weight: 2,
+              description: "正面評價",
+              words: "好棒,節目精彩,操作便利,買票方便",
+              enabled: true,
+            },
+            {
+              id: 4,
+              flag: "參考指標",
+              weight: 1,
+              description: "近期節目相關",
+              words: "聯票,套票,梵谷,郭富城",
+              enabled: true,
+            },
+          ],
+        },
+        computed: {
+          draftWordList() {
+            return this.draft.words.split(",").filter(Boolean);
+          },
+        },
         methods: {
           addWord() {
-            const words = this.wordInput.split(/[,，、\n]+/).map(word => word.trim()).filter(Boolean);
-            this.draft.words = [...new Set([...this.draftWordList, ...words])].join(',');
-            this.wordInput = '';
+            const words = this.wordInput
+              .split(/[,，、\n]+/)
+              .map((word) => word.trim())
+              .filter(Boolean);
+            this.draft.words = [
+              ...new Set([...this.draftWordList, ...words]),
+            ].join(",");
+            this.wordInput = "";
           },
-          removeWord(word) { this.draft.words = this.draftWordList.filter(item => item !== word).join(','); },
-          flagType(flag) { return { '警示': 'danger', '積極關注': 'warning', '參考指標': 'success' }[flag]; },
-          editGroup(row) { this.editingId = row ? row.id : null; this.draft = row ? { ...row } : { flag: '警示', weight: 1, description: '', words: '', enabled: false }; this.wordInput = ''; this.error = ''; this.dialogVisible = true; },
+          removeWord(word) {
+            this.draft.words = this.draftWordList
+              .filter((item) => item !== word)
+              .join(",");
+          },
+          flagType(flag) {
+            return { 警示: "danger", 積極關注: "warning", 參考指標: "success" }[
+              flag
+            ];
+          },
+          editGroup(row) {
+            this.editingId = row ? row.id : null;
+            this.draft = row
+              ? { ...row }
+              : {
+                  flag: "警示",
+                  weight: 1,
+                  description: "",
+                  words: "",
+                  enabled: false,
+                };
+            this.wordInput = "";
+            this.error = "";
+            this.dialogVisible = true;
+          },
           saveGroup() {
             this.addWord();
-            if (!this.draft.description.trim() || !this.draft.words.trim() || !this.flags.includes(this.draft.flag) || !Number.isInteger(this.draft.weight) || this.draft.weight < 1 || this.draft.weight > 99) { this.error = '請填寫群組說明、字詞內容及有效權值'; return; }
-            const group = { ...this.draft, description: this.draft.description.trim(), words: this.draft.words.split(/[,，、\n]+/).map(word => word.trim()).filter(Boolean).join(',') };
-            if (!group.words) { this.error = '請輸入至少一個字詞'; return; }
-            if (this.editingId === null) { group.id = Math.max(0, ...this.groups.map(item => item.id)) + 1; this.groups.push(group); }
-            else { const index = this.groups.findIndex(item => item.id === this.editingId); if (index !== -1) this.$set(this.groups, index, group); }
+            if (
+              !this.draft.description.trim() ||
+              !this.draft.words.trim() ||
+              !this.flags.includes(this.draft.flag) ||
+              !Number.isInteger(this.draft.weight) ||
+              this.draft.weight < 1 ||
+              this.draft.weight > 99
+            ) {
+              this.error = "請填寫群組說明、字詞內容及有效權值";
+              return;
+            }
+            const group = {
+              ...this.draft,
+              description: this.draft.description.trim(),
+              words: this.draft.words
+                .split(/[,，、\n]+/)
+                .map((word) => word.trim())
+                .filter(Boolean)
+                .join(","),
+            };
+            if (!group.words) {
+              this.error = "請輸入至少一個字詞";
+              return;
+            }
+            if (this.editingId === null) {
+              group.id = Math.max(0, ...this.groups.map((item) => item.id)) + 1;
+              this.groups.push(group);
+            } else {
+              const index = this.groups.findIndex(
+                (item) => item.id === this.editingId,
+              );
+              if (index !== -1) this.$set(this.groups, index, group);
+            }
             this.dialogVisible = false;
           },
-          async deleteGroup(row) { try { await this.$confirm('將刪除此資料 是否繼續?', '提示', { confirmButtonText: '確定', cancelButtonText: '取消', type: 'warning', closeOnClickModal: false }); this.groups = this.groups.filter(item => item.id !== row.id); } catch {} }
-        }
+          async deleteGroup(row) {
+            try {
+              await this.$confirm("將刪除此資料 是否繼續?", "提示", {
+                confirmButtonText: "確定",
+                cancelButtonText: "取消",
+                type: "warning",
+                closeOnClickModal: false,
+              });
+              this.groups = this.groups.filter((item) => item.id !== row.id);
+            } catch {}
+          },
+        },
       });
       const phrasesApp = new Vue({
-        el: '#phrases-app',
-        data: { phrases: [], mainFilter: '', subFilter: '', appliedMain: '', appliedSub: '', page: 1, pageSize: 10, dialogVisible: false, editingId: null, error: '', draft: { main: '', sub: '', title: '', weight: 10, content: '', mediaType: '', mediaContent: '', enabled: false }, categoryOptions: [{ value: 'test', label: '主分類(測試)', children: [{value:'test-a',label:'次分類A(測試)'},{value:'test-b',label:'次分類B(測試)'}] },{value:'greeting',label:'招呼語',children:[{value:'general',label:'一般招呼'}]}], baseReplies: JSON.parse(JSON.stringify(monitorApp.quickReplyOptions)) },
+        el: "#phrases-app",
+        data: {
+          phrases: [],
+          mainFilter: "",
+          subFilter: "",
+          appliedMain: "",
+          appliedSub: "",
+          page: 1,
+          pageSize: 10,
+          dialogVisible: false,
+          editingId: null,
+          error: "",
+          draft: {
+            main: "",
+            sub: "",
+            title: "",
+            weight: 10,
+            content: "",
+            mediaType: "",
+            mediaContent: "",
+            enabled: false,
+          },
+          categoryOptions: [
+            {
+              value: "test",
+              label: "主分類(測試)",
+              children: [
+                { value: "test-a", label: "次分類A(測試)" },
+                { value: "test-b", label: "次分類B(測試)" },
+              ],
+            },
+            {
+              value: "greeting",
+              label: "招呼語",
+              children: [{ value: "general", label: "一般招呼" }],
+            },
+          ],
+          baseReplies: JSON.parse(JSON.stringify(monitorApp.quickReplyOptions)),
+        },
         computed: {
-          filterSubcategories() { return this.mainFilter ? (this.categoryOptions.find(group => group.value === this.mainFilter) || { children: [] }).children : this.categoryOptions.flatMap(group => group.children); },
-          draftSubcategories() { return (this.categoryOptions.find(group => group.value === this.draft.main) || { children: [] }).children; },
-          filteredPhrases() { return this.phrases.filter(item => (!this.appliedMain || item.main === this.appliedMain) && (!this.appliedSub || item.sub === this.appliedSub)); },
-          pagedPhrases() { return this.filteredPhrases.slice((this.page - 1) * this.pageSize, this.page * this.pageSize); }
+          filterSubcategories() {
+            return this.mainFilter
+              ? (
+                  this.categoryOptions.find(
+                    (group) => group.value === this.mainFilter,
+                  ) || { children: [] }
+                ).children
+              : this.categoryOptions.flatMap((group) => group.children);
+          },
+          draftSubcategories() {
+            return (
+              this.categoryOptions.find(
+                (group) => group.value === this.draft.main,
+              ) || { children: [] }
+            ).children;
+          },
+          filteredPhrases() {
+            return this.phrases.filter(
+              (item) =>
+                (!this.appliedMain || item.main === this.appliedMain) &&
+                (!this.appliedSub || item.sub === this.appliedSub),
+            );
+          },
+          pagedPhrases() {
+            return this.filteredPhrases.slice(
+              (this.page - 1) * this.pageSize,
+              this.page * this.pageSize,
+            );
+          },
         },
         methods: {
-          categoryLabel(value) { return (this.categoryOptions.find(item => item.value === value) || {}).label || ''; },
-          subcategoryLabel(main, sub) { return ((this.categoryOptions.find(item => item.value === main) || { children: [] }).children.find(item => item.value === sub) || {}).label || ''; },
-          searchPhrases() { this.appliedMain = this.mainFilter; this.appliedSub = this.subFilter; this.page = 1; },
-          editPhrase(row) { this.editingId = row ? row.id : null; this.draft = row ? { ...row } : { main: '', sub: '', title: '', weight: 10, content: '', mediaType: '', mediaContent: '', enabled: false }; this.error = ''; this.dialogVisible = true; },
+          categoryLabel(value) {
+            return (
+              (this.categoryOptions.find((item) => item.value === value) || {})
+                .label || ""
+            );
+          },
+          subcategoryLabel(main, sub) {
+            return (
+              (
+                (
+                  this.categoryOptions.find((item) => item.value === main) || {
+                    children: [],
+                  }
+                ).children.find((item) => item.value === sub) || {}
+              ).label || ""
+            );
+          },
+          searchPhrases() {
+            this.appliedMain = this.mainFilter;
+            this.appliedSub = this.subFilter;
+            this.page = 1;
+          },
+          editPhrase(row) {
+            this.editingId = row ? row.id : null;
+            this.draft = row
+              ? { ...row }
+              : {
+                  main: "",
+                  sub: "",
+                  title: "",
+                  weight: 10,
+                  content: "",
+                  mediaType: "",
+                  mediaContent: "",
+                  enabled: false,
+                };
+            this.error = "";
+            this.dialogVisible = true;
+          },
           savePhrase() {
-            if (!this.draft.main || !this.draftSubcategories.some(item => item.value === this.draft.sub) || !this.draft.title.trim() || !this.draft.content.trim() || !Number.isInteger(this.draft.weight) || this.draft.weight < 1 || this.draft.weight > 999) { this.error = '請填寫主次分類、常用語標題、回覆內容及有效權值'; return; }
-            const phrase = { ...this.draft, title: this.draft.title.trim(), content: this.draft.content.trim() };
-            if (this.editingId === null) { phrase.id = Math.max(0, ...this.phrases.map(item => item.id)) + 1; this.phrases.push(phrase); } else { const index = this.phrases.findIndex(item => item.id === this.editingId); if (index !== -1) this.$set(this.phrases, index, phrase); }
-            this.syncReplies(); this.dialogVisible = false;
+            if (
+              !this.draft.main ||
+              !this.draftSubcategories.some(
+                (item) => item.value === this.draft.sub,
+              ) ||
+              !this.draft.title.trim() ||
+              !this.draft.content.trim() ||
+              !Number.isInteger(this.draft.weight) ||
+              this.draft.weight < 1 ||
+              this.draft.weight > 999
+            ) {
+              this.error = "請填寫主次分類、常用語標題、回覆內容及有效權值";
+              return;
+            }
+            const phrase = {
+              ...this.draft,
+              title: this.draft.title.trim(),
+              content: this.draft.content.trim(),
+            };
+            if (this.editingId === null) {
+              phrase.id =
+                Math.max(0, ...this.phrases.map((item) => item.id)) + 1;
+              this.phrases.push(phrase);
+            } else {
+              const index = this.phrases.findIndex(
+                (item) => item.id === this.editingId,
+              );
+              if (index !== -1) this.$set(this.phrases, index, phrase);
+            }
+            this.syncReplies();
+            this.dialogVisible = false;
           },
           syncReplies() {
-            const options = JSON.parse(JSON.stringify(this.baseReplies)).filter(group => this.categoryOptions.some(item => item.value === group.value && item.enabled !== false));
-            options.forEach(group => { const category = this.categoryOptions.find(item => item.value === group.value); group.label = category.label; group.children = group.children.filter(child => !child.children || category.children.some(sub => sub.value === child.value && sub.enabled !== false)); group.children.forEach(child => { const sub = category.children.find(item => item.value === child.value); if (sub) child.label = sub.label; }); });
-            this.phrases.filter(item => item.enabled && this.categoryOptions.some(group => group.value === item.main && group.enabled !== false && group.children.some(sub => sub.value === item.sub && sub.enabled !== false))).slice().sort((a,b) => b.weight - a.weight).forEach(item => {
-              let main = options.find(group => group.value === item.main);
-              if (!main) { main = { value: item.main, label: this.categoryLabel(item.main), children: [] }; options.push(main); }
-              let sub = main.children.find(group => group.value === item.sub);
-              if (!sub) { sub = { value: item.sub, label: this.subcategoryLabel(item.main,item.sub), children: [] }; main.children.push(sub); }
-              sub.children.push({ value: item.content, label: item.title });
+            const options = JSON.parse(JSON.stringify(this.baseReplies)).filter(
+              (group) =>
+                this.categoryOptions.some(
+                  (item) =>
+                    item.value === group.value && item.enabled !== false,
+                ),
+            );
+            options.forEach((group) => {
+              const category = this.categoryOptions.find(
+                (item) => item.value === group.value,
+              );
+              group.label = category.label;
+              group.children = group.children.filter(
+                (child) =>
+                  !child.children ||
+                  category.children.some(
+                    (sub) => sub.value === child.value && sub.enabled !== false,
+                  ),
+              );
+              group.children.forEach((child) => {
+                const sub = category.children.find(
+                  (item) => item.value === child.value,
+                );
+                if (sub) child.label = sub.label;
+              });
             });
+            this.phrases
+              .filter(
+                (item) =>
+                  item.enabled &&
+                  this.categoryOptions.some(
+                    (group) =>
+                      group.value === item.main &&
+                      group.enabled !== false &&
+                      group.children.some(
+                        (sub) =>
+                          sub.value === item.sub && sub.enabled !== false,
+                      ),
+                  ),
+              )
+              .slice()
+              .sort((a, b) => b.weight - a.weight)
+              .forEach((item) => {
+                let main = options.find((group) => group.value === item.main);
+                if (!main) {
+                  main = {
+                    value: item.main,
+                    label: this.categoryLabel(item.main),
+                    children: [],
+                  };
+                  options.push(main);
+                }
+                let sub = main.children.find(
+                  (group) => group.value === item.sub,
+                );
+                if (!sub) {
+                  sub = {
+                    value: item.sub,
+                    label: this.subcategoryLabel(item.main, item.sub),
+                    children: [],
+                  };
+                  main.children.push(sub);
+                }
+                sub.children.push({ value: item.content, label: item.title });
+              });
             monitorApp.quickReplyOptions = options;
           },
-          async deletePhrase(row) { try { await this.$confirm('將刪除此資料 是否繼續?', '提示', {type:'warning',confirmButtonText:'確定',cancelButtonText:'取消'}); this.phrases = this.phrases.filter(item => item.id !== row.id); this.syncReplies(); if (this.page > Math.max(1, Math.ceil(this.filteredPhrases.length / this.pageSize))) this.page = 1; } catch {} }
-        }
+          async deletePhrase(row) {
+            try {
+              await this.$confirm("將刪除此資料 是否繼續?", "提示", {
+                type: "warning",
+                confirmButtonText: "確定",
+                cancelButtonText: "取消",
+              });
+              this.phrases = this.phrases.filter((item) => item.id !== row.id);
+              this.syncReplies();
+              if (
+                this.page >
+                Math.max(
+                  1,
+                  Math.ceil(this.filteredPhrases.length / this.pageSize),
+                )
+              )
+                this.page = 1;
+            } catch {}
+          },
+        },
       });
-      phrasesApp.categoryOptions.splice(1, 0, { value: 'fd', label: 'fd', children: [], enabled: false });
-      phrasesApp.categoryOptions.forEach((group, index) => { Vue.set(group, 'id', index + 1); if (group.enabled === undefined) Vue.set(group, 'enabled', true); });
-      phrasesApp.categoryOptions.find(group => group.value === 'fd').children.push({value:'fd-general',label:'一般問題'},{value:'fd-order',label:'訂單問題'});
-      phrasesApp.categoryOptions.find(group => group.value === 'greeting').children.push({value:'greeting-welcome',label:'歡迎用語'},{value:'greeting-end',label:'結束用語'});
-      phrasesApp.categoryOptions.forEach(group => group.children.forEach(sub => Vue.set(sub, 'enabled', group.enabled)));
+      phrasesApp.categoryOptions.splice(1, 0, {
+        value: "fd",
+        label: "fd",
+        children: [],
+        enabled: false,
+      });
+      phrasesApp.categoryOptions.forEach((group, index) => {
+        Vue.set(group, "id", index + 1);
+        if (group.enabled === undefined) Vue.set(group, "enabled", true);
+      });
+      phrasesApp.categoryOptions
+        .find((group) => group.value === "fd")
+        .children.push(
+          { value: "fd-general", label: "一般問題" },
+          { value: "fd-order", label: "訂單問題" },
+        );
+      phrasesApp.categoryOptions
+        .find((group) => group.value === "greeting")
+        .children.push(
+          { value: "greeting-welcome", label: "歡迎用語" },
+          { value: "greeting-end", label: "結束用語" },
+        );
+      phrasesApp.categoryOptions.forEach((group) =>
+        group.children.forEach((sub) => Vue.set(sub, "enabled", group.enabled)),
+      );
       const phraseCategoriesApp = new Vue({
-        el: '#phrase-categories-app',
-        data: { categories: phrasesApp.categoryOptions, searchText: '', appliedSearch: '', mainVisible: false, subsVisible: false, pairVisible: false, editingValue: '', groupDraft: { label: '', enabled: true, children: [] }, newSubLabel: '', error: '', nextId: 4, subSequence: 0 },
+        el: "#phrase-categories-app",
+        data: {
+          categories: phrasesApp.categoryOptions,
+          searchText: "",
+          appliedSearch: "",
+          mainVisible: false,
+          subsVisible: false,
+          pairVisible: false,
+          editingValue: "",
+          groupDraft: { label: "", enabled: true, children: [] },
+          newSubLabel: "",
+          error: "",
+          nextId: 4,
+          subSequence: 0,
+        },
         computed: {
-          filteredCategories() { const term = this.appliedSearch.toLowerCase(); return this.categories.filter(main => main.label.toLowerCase().includes(term) || main.children.some(sub => sub.label.toLowerCase().includes(term))); }
+          filteredCategories() {
+            const term = this.appliedSearch.toLowerCase();
+            return this.categories.filter(
+              (main) =>
+                main.label.toLowerCase().includes(term) ||
+                main.children.some((sub) =>
+                  sub.label.toLowerCase().includes(term),
+                ),
+            );
+          },
         },
         methods: {
-          sync() { phrasesApp.syncReplies(); },
-          matchesSearch(label) { return !!this.appliedSearch && label.toLowerCase().includes(this.appliedSearch.toLowerCase()); },
-          editMain(row) { this.editingValue = row ? row.value : ''; this.groupDraft = row ? JSON.parse(JSON.stringify(row)) : { label: '', enabled: true, children: [] }; this.newSubLabel = ''; this.error = ''; this.mainVisible = true; },
+          sync() {
+            phrasesApp.syncReplies();
+          },
+          matchesSearch(label) {
+            return (
+              !!this.appliedSearch &&
+              label.toLowerCase().includes(this.appliedSearch.toLowerCase())
+            );
+          },
+          editMain(row) {
+            this.editingValue = row ? row.value : "";
+            this.groupDraft = row
+              ? JSON.parse(JSON.stringify(row))
+              : { label: "", enabled: true, children: [] };
+            this.newSubLabel = "";
+            this.error = "";
+            this.mainVisible = true;
+          },
           addDraftSub() {
             const label = this.newSubLabel.trim();
             if (!label) return;
-            if (this.groupDraft.children.some(sub => sub.label.trim() === label)) { this.error = '次分類名稱不可重複'; return; }
-            this.groupDraft.children.push({value:'sub-' + Date.now() + '-' + (++this.subSequence),label,enabled:true}); this.newSubLabel = ''; this.error = '';
+            if (
+              this.groupDraft.children.some((sub) => sub.label.trim() === label)
+            ) {
+              this.error = "次分類名稱不可重複";
+              return;
+            }
+            this.groupDraft.children.push({
+              value: "sub-" + Date.now() + "-" + ++this.subSequence,
+              label,
+              enabled: true,
+            });
+            this.newSubLabel = "";
+            this.error = "";
           },
           removeDraftSub(sub) {
-            if (phrasesApp.phrases.some(item => item.main === this.editingValue && item.sub === sub.value)) { this.error = '此次分類仍有常用語，請先移除或變更常用語分類'; return; }
-            this.groupDraft.children.splice(this.groupDraft.children.indexOf(sub),1); this.error = '';
+            if (
+              phrasesApp.phrases.some(
+                (item) =>
+                  item.main === this.editingValue && item.sub === sub.value,
+              )
+            ) {
+              this.error = "此次分類仍有常用語，請先移除或變更常用語分類";
+              return;
+            }
+            this.groupDraft.children.splice(
+              this.groupDraft.children.indexOf(sub),
+              1,
+            );
+            this.error = "";
           },
           saveCategoryForm() {
-            if (this.newSubLabel.trim()) { this.addDraftSub(); if (this.error) return; }
+            if (this.newSubLabel.trim()) {
+              this.addDraftSub();
+              if (this.error) return;
+            }
             const label = this.groupDraft.label.trim();
-            if (!label) { this.error = '請輸入主分類名稱'; return; }
-            if (this.categories.some(main => main.value !== this.editingValue && main.label === label)) { this.error = '主分類名稱不可重複'; return; }
-            const children = this.groupDraft.children.map(sub => ({...sub,label:sub.label.trim()}));
-            if (children.some(sub => !sub.label) || new Set(children.map(sub => sub.label)).size !== children.length) { this.error = '請填寫不重複的次分類名稱'; return; }
+            if (!label) {
+              this.error = "請輸入主分類名稱";
+              return;
+            }
+            if (
+              this.categories.some(
+                (main) =>
+                  main.value !== this.editingValue && main.label === label,
+              )
+            ) {
+              this.error = "主分類名稱不可重複";
+              return;
+            }
+            const children = this.groupDraft.children.map((sub) => ({
+              ...sub,
+              label: sub.label.trim(),
+            }));
+            if (
+              children.some((sub) => !sub.label) ||
+              new Set(children.map((sub) => sub.label)).size !== children.length
+            ) {
+              this.error = "請填寫不重複的次分類名稱";
+              return;
+            }
             if (this.editingValue) {
-              const main = this.categories.find(item => item.value === this.editingValue);
-              main.label = label; main.enabled = this.groupDraft.enabled; main.children.splice(0,main.children.length,...children);
-            } else { const id = this.nextId++; this.categories.push({id,value:'category-' + Date.now() + '-' + id,label,enabled:this.groupDraft.enabled,children}); }
-            this.sync(); this.mainVisible = false;
+              const main = this.categories.find(
+                (item) => item.value === this.editingValue,
+              );
+              main.label = label;
+              main.enabled = this.groupDraft.enabled;
+              main.children.splice(0, main.children.length, ...children);
+            } else {
+              const id = this.nextId++;
+              this.categories.push({
+                id,
+                value: "category-" + Date.now() + "-" + id,
+                label,
+                enabled: this.groupDraft.enabled,
+                children,
+              });
+            }
+            this.sync();
+            this.mainVisible = false;
           },
           async removeMain(row) {
-            if (phrasesApp.phrases.some(item => item.main === row.value)) { this.$message.warning('此分類仍有常用語，請先移除或變更常用語分類'); return; }
-            try { await this.$confirm('將刪除此主分類及其 ' + row.children.length + ' 個次分類，是否繼續?', '提示', {type:'warning',confirmButtonText:'確定',cancelButtonText:'取消',closeOnClickModal:false}); const index = this.categories.indexOf(row); if (index !== -1) this.categories.splice(index,1); this.sync(); } catch {}
-          }
-        }
+            if (phrasesApp.phrases.some((item) => item.main === row.value)) {
+              this.$message.warning(
+                "此分類仍有常用語，請先移除或變更常用語分類",
+              );
+              return;
+            }
+            try {
+              await this.$confirm(
+                "將刪除此主分類及其 " +
+                  row.children.length +
+                  " 個次分類，是否繼續?",
+                "提示",
+                {
+                  type: "warning",
+                  confirmButtonText: "確定",
+                  cancelButtonText: "取消",
+                  closeOnClickModal: false,
+                },
+              );
+              const index = this.categories.indexOf(row);
+              if (index !== -1) this.categories.splice(index, 1);
+              this.sync();
+            } catch {}
+          },
+        },
       });
       function renderPage() {
-        const showProjects = window.location.hash === '#projects';
-        const showHome = window.location.hash === '#home';
-        const showService = window.location.hash === '#disable-service';
-        const showConversations = window.location.hash === '#live-conversations';
-        const showChat = window.location.hash === '#conversation-monitor';
-        const showRecords = window.location.hash === '#conversation-records';
-        const showKeywords = window.location.hash === '#keyword-settings';
-        const showPhrases = window.location.hash === '#common-phrases';
-        const showPhraseCategories = window.location.hash === '#phrase-categories';
-        const showManagement = ['#support-categories','#knowledge-categories','#knowledge-list','#announcements','#online-status','#project-management','#role-management','#user-management','#menu-management','#bot-style-settings'].includes(location.hash);
-        const showMonitor = showManagement || showService || showConversations || showChat || showRecords || showKeywords || showPhrases || showPhraseCategories;
-        document.querySelector('.phrase-categories-page').hidden = !showPhraseCategories;
-        document.querySelector('#phrase-categories-link').toggleAttribute('aria-current', showPhraseCategories);
-        if (!showPhraseCategories) phraseCategoriesApp.mainVisible = phraseCategoriesApp.subsVisible = phraseCategoriesApp.pairVisible = false;
-        if (showPhraseCategories) document.querySelector('#phrase-categories-link').setAttribute('aria-current', 'page');
-        document.querySelector('.phrases-page').hidden = !showPhrases;
+        const showProjects = window.location.hash === "#projects";
+        const showHome = window.location.hash === "#home";
+        const showService = window.location.hash === "#disable-service";
+        const showConversations =
+          window.location.hash === "#live-conversations";
+        const showChat = window.location.hash === "#conversation-monitor";
+        const showRecords = window.location.hash === "#conversation-records";
+        const showKeywords = window.location.hash === "#keyword-settings";
+        const showPhrases = window.location.hash === "#common-phrases";
+        const showPhraseCategories =
+          window.location.hash === "#phrase-categories";
+        const showManagement = [
+          "#support-categories",
+          "#knowledge-categories",
+          "#knowledge-list",
+          "#announcements",
+          "#online-status",
+          "#project-management",
+          "#role-management",
+          "#user-management",
+          "#menu-management",
+          "#bot-style-settings",
+        ].includes(location.hash);
+        const showMonitor =
+          showManagement ||
+          showService ||
+          showConversations ||
+          showChat ||
+          showRecords ||
+          showKeywords ||
+          showPhrases ||
+          showPhraseCategories;
+        document.querySelector(".phrase-categories-page").hidden =
+          !showPhraseCategories;
+        document
+          .querySelector("#phrase-categories-link")
+          .toggleAttribute("aria-current", showPhraseCategories);
+        if (!showPhraseCategories)
+          phraseCategoriesApp.mainVisible =
+            phraseCategoriesApp.subsVisible =
+            phraseCategoriesApp.pairVisible =
+              false;
+        if (showPhraseCategories)
+          document
+            .querySelector("#phrase-categories-link")
+            .setAttribute("aria-current", "page");
+        document.querySelector(".phrases-page").hidden = !showPhrases;
         if (!showPhrases) phrasesApp.dialogVisible = false;
-        document.querySelector('#common-phrases-link').toggleAttribute('aria-current', showPhrases);
+        document
+          .querySelector("#common-phrases-link")
+          .toggleAttribute("aria-current", showPhrases);
         if (showPhrases || showPhraseCategories) {
-          if (showPhrases) document.querySelector('#common-phrases-link').setAttribute('aria-current','page');
-          document.querySelector('.tools-group').open = true;
-          document.querySelector('.monitor-group').open = false;
-          document.querySelectorAll('.nav-group').forEach((group,index) => { group.open = index === 0; });
+          if (showPhrases)
+            document
+              .querySelector("#common-phrases-link")
+              .setAttribute("aria-current", "page");
+          document.querySelector(".tools-group").open = true;
+          document.querySelector(".monitor-group").open = false;
+          document.querySelectorAll(".nav-group").forEach((group, index) => {
+            group.open = index === 0;
+          });
         }
-        document.querySelector('.keyword-page').hidden = !showKeywords;
+        document.querySelector(".keyword-page").hidden = !showKeywords;
         if (!showKeywords) keywordApp.dialogVisible = false;
-        document.querySelector('.records-page').hidden = !showRecords;
+        document.querySelector(".records-page").hidden = !showRecords;
         if (!showRecords) recordsApp.recordVisible = false;
-        document.querySelector('.monitor-page').hidden = !showChat;
-        if (!showChat) { monitorApp.historyVisible = monitorApp.categoryVisible = monitorApp.simulatorVisible = false; }
-        document.querySelector('.login').hidden = showProjects || showHome || showMonitor;
-        document.querySelector('.projects').hidden = !showProjects;
-        document.querySelector('.platform').hidden = !(showHome || showMonitor);
-        document.querySelector('.home').hidden = !showHome;
-        document.querySelector('.service-page').hidden = !showService;
-        document.querySelector('.conversations-page').hidden = !showConversations;
-        document.querySelector('.service-crumbs').hidden = !showMonitor;
-        if (showMonitor && !showManagement) document.querySelector('.service-crumbs').innerHTML = '<span>/</span> 對話管理 <span class="monitor-breadcrumb"></span><span>/</span> <span aria-current="page"></span>';
-        document.querySelector('.service-crumbs [aria-current]').textContent = showRecords ? '對話紀錄查詢' : showChat ? '交談監看列表' : showConversations ? '即時對話列表' : '停用真人客服設定';
-        document.querySelector('.platform').classList.toggle('records-view', showRecords || showKeywords);
-        document.querySelector('#keyword-settings-link').toggleAttribute('aria-current', showKeywords);
+        document.querySelector(".monitor-page").hidden = !showChat;
+        if (!showChat) {
+          monitorApp.historyVisible =
+            monitorApp.categoryVisible =
+            monitorApp.simulatorVisible =
+              false;
+        }
+        document.querySelector(".login").hidden =
+          showProjects || showHome || showMonitor;
+        document.querySelector(".projects").hidden = !showProjects;
+        document.querySelector(".platform").hidden = !(showHome || showMonitor);
+        document.querySelector(".home").hidden = !showHome;
+        document.querySelector(".service-page").hidden = !showService;
+        document.querySelector(".conversations-page").hidden =
+          !showConversations;
+        document.querySelector(".service-crumbs").hidden = !showMonitor;
+        if (showMonitor && !showManagement)
+          document.querySelector(".service-crumbs").innerHTML =
+            '<span>/</span> 對話管理 <span class="monitor-breadcrumb"></span><span>/</span> <span aria-current="page"></span>';
+        document.querySelector(".service-crumbs [aria-current]").textContent =
+          showRecords
+            ? "對話紀錄查詢"
+            : showChat
+              ? "交談監看列表"
+              : showConversations
+                ? "即時對話列表"
+                : "停用真人客服設定";
+        document
+          .querySelector(".platform")
+          .classList.toggle("records-view", showRecords || showKeywords);
+        document
+          .querySelector("#keyword-settings-link")
+          .toggleAttribute("aria-current", showKeywords);
         if (showKeywords) {
-          document.querySelector('.service-crumbs [aria-current]').textContent = '關鍵字監看設定';
-          document.querySelector('#keyword-settings-link').setAttribute('aria-current', 'page');
-          document.querySelectorAll('.nav-group').forEach((group, index) => { group.open = index === 0; });
+          document.querySelector(".service-crumbs [aria-current]").textContent =
+            "關鍵字監看設定";
+          document
+            .querySelector("#keyword-settings-link")
+            .setAttribute("aria-current", "page");
+          document.querySelectorAll(".nav-group").forEach((group, index) => {
+            group.open = index === 0;
+          });
         }
-        document.querySelector('#conversation-records-link').toggleAttribute('aria-current', showRecords);
+        document
+          .querySelector("#conversation-records-link")
+          .toggleAttribute("aria-current", showRecords);
         if (showRecords) {
-          document.querySelector('#conversation-records-link').setAttribute('aria-current', 'page');
-          document.querySelectorAll('.nav-group').forEach((group, index) => { group.open = index === 0; });
+          document
+            .querySelector("#conversation-records-link")
+            .setAttribute("aria-current", "page");
+          document.querySelectorAll(".nav-group").forEach((group, index) => {
+            group.open = index === 0;
+          });
         }
-        document.querySelector('.platform').classList.toggle('service-view', showMonitor);
-        document.querySelector('#live-conversations-link').toggleAttribute('aria-current', showConversations);
-        document.querySelector('#conversation-monitor-link').toggleAttribute('aria-current', showChat);
+        document
+          .querySelector(".platform")
+          .classList.toggle("service-view", showMonitor);
+        document
+          .querySelector("#live-conversations-link")
+          .toggleAttribute("aria-current", showConversations);
+        document
+          .querySelector("#conversation-monitor-link")
+          .toggleAttribute("aria-current", showChat);
         if (showConversations || showChat) {
-          document.querySelector(showChat ? '#conversation-monitor-link' : '#live-conversations-link').setAttribute('aria-current', 'page');
-          document.querySelector('.monitor-group').open = true;
-          document.querySelectorAll('.nav-group').forEach((group, index) => { group.open = index === 0; });
+          document
+            .querySelector(
+              showChat
+                ? "#conversation-monitor-link"
+                : "#live-conversations-link",
+            )
+            .setAttribute("aria-current", "page");
+          document.querySelector(".monitor-group").open = true;
+          document.querySelectorAll(".nav-group").forEach((group, index) => {
+            group.open = index === 0;
+          });
         }
         if (!showConversations) conversations.stopRefresh();
-        document.querySelector('#disable-service-link').toggleAttribute('aria-current', showService);
+        document
+          .querySelector("#disable-service-link")
+          .toggleAttribute("aria-current", showService);
         if (showService) {
-          document.querySelector('#disable-service-link').setAttribute('aria-current', 'page');
-          document.querySelector('.monitor-group').open = true;
-          document.querySelector('.nav-group').open = true;
-          document.querySelector('#service-title').focus();
+          document
+            .querySelector("#disable-service-link")
+            .setAttribute("aria-current", "page");
+          document.querySelector(".monitor-group").open = true;
+          document.querySelector(".nav-group").open = true;
+          document.querySelector("#service-title").focus();
         }
-        document.title = showChat ? '交談監看列表 | C.C. Bot' : showConversations ? '即時對話列表 | C.C. Bot' : showService ? '停用真人客服設定 | C.C. Bot' : showHome ? '售票網 | C.C. Bot' : showProjects ? '選擇專案 | CCBOT 管理平台' : 'CCBOT 管理平台';
-        if (showProjects) document.querySelector('#projects-title').focus();
-        if (showHome) document.querySelector('#home-title').focus();
-        if (showRecords) document.title = '對話紀錄查詢 | C.C. Bot';
-        if (showKeywords) document.title = '關鍵字監看設定 | C.C. Bot';
-        if (showPhrases || showPhraseCategories) { const title = showPhraseCategories ? '常用語分類管理' : '常用語管理'; document.title = title + ' | C.C. Bot'; document.querySelector('.service-crumbs [aria-current]').textContent = title; document.querySelector('.monitor-breadcrumb').innerHTML = '<span>/</span> 對話維運工具'; }
-        else if (!showManagement) { document.querySelector('.monitor-breadcrumb').innerHTML = (showService || showConversations || showChat) ? '<span>/</span> 即時對話監控' : ''; }
-        if (!showHome) document.querySelector('.account').open = false;
+        document.title = showChat
+          ? "交談監看列表 | C.C. Bot"
+          : showConversations
+            ? "即時對話列表 | C.C. Bot"
+            : showService
+              ? "停用真人客服設定 | C.C. Bot"
+              : showHome
+                ? "售票網 | C.C. Bot"
+                : showProjects
+                  ? "選擇專案 | CCBOT 管理平台"
+                  : "CCBOT 管理平台";
+        if (showProjects) document.querySelector("#projects-title").focus();
+        if (showHome) document.querySelector("#home-title").focus();
+        if (showRecords) document.title = "對話紀錄查詢 | C.C. Bot";
+        if (showKeywords) document.title = "關鍵字監看設定 | C.C. Bot";
+        if (showPhrases || showPhraseCategories) {
+          const title = showPhraseCategories ? "常用語分類管理" : "常用語管理";
+          document.title = title + " | C.C. Bot";
+          document.querySelector(".service-crumbs [aria-current]").textContent =
+            title;
+          document.querySelector(".monitor-breadcrumb").innerHTML =
+            "<span>/</span> 對話維運工具";
+        } else if (!showManagement) {
+          document.querySelector(".monitor-breadcrumb").innerHTML =
+            showService || showConversations || showChat
+              ? "<span>/</span> 即時對話監控"
+              : "";
+        }
+        if (!showHome) document.querySelector(".account").open = false;
       }
-      window.addEventListener('hashchange', renderPage);
+      window.addEventListener("hashchange", renderPage);
       renderPage();
     </script>
     <script src="management.js"></script>
@@ -756,7 +2959,3 @@
     <script src="bot-settings.js"></script>
   </body>
 </html>
-
-
-
-
